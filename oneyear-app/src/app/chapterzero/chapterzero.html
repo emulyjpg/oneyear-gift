@@ -1,0 +1,10 @@
+<div class="imessage-bg">
+  <div class="imessage-chat">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'bubble user' : 'bubble robot'">
+      <span>{{ msg.text }}</span>
+    </div>
+  </div>
+  <div class="choices-row">
+    <button (click)="handleChoice('next')">Next</button>
+  </div>
+</div>

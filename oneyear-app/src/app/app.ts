@@ -1,43 +1,30 @@
 
-import { Component, signal, HostListener } from '@angular/core';
+
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatIconModule],
+  imports: [MatIconModule, RouterOutlet],
   templateUrl: './app.html',
   styleUrls: ['./app.scss']
 })
 export class App {
   private pressedKeys = new Set<string>();
   private animationFrameId: number | null = null;
-  protected readonly title = signal('oneyear-app');
-
   pos = { x: 180, y: 180 };
   readonly step = 1;
   readonly boxSize = 400;
   readonly charSize = 40;
 
-  constructor() {
-    if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
-      const saved = window.localStorage.getItem('emoji-pos');
-      if (saved) {
-        try {
-          const parsed = JSON.parse(saved);
-          if (typeof parsed.x === 'number' && typeof parsed.y === 'number') {
-            this.pos.x = parsed.x;
-            this.pos.y = parsed.y;
-          }
-        } catch {}
-      }
-    }
-  }
-
   move(dx: number, dy: number) {
     this.pos.x = Math.max(0, Math.min(this.boxSize - this.charSize, this.pos.x + dx));
     this.pos.y = Math.max(0, Math.min(this.boxSize - this.charSize, this.pos.y + dy));
+  }
+
+  constructor() {
     if (typeof window !== 'undefined' && typeof window.localStorage !== 'undefined') {
       window.localStorage.setItem('emoji-pos', JSON.stringify(this.pos));
     }
@@ -85,4 +72,5 @@ export class App {
     this.moveByPressedKeys();
     this.animationFrameId = requestAnimationFrame(() => this.animateMove());
   }
+  // Add your move method if needed
 }

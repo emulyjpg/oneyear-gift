@@ -1,0 +1,19 @@
+<div class="game-container">
+  <div
+    class="character"
+    [style.left.px]="pos.x"
+    [style.top.px]="pos.y"
+  >
+    <mat-icon>circle</mat-icon>
+  </div>
+</div>
+<div class="instructions">
+  Use the arrow buttons to move the character.
+</div>
+<div class="arrow-buttons">
+  <button aria-label="Up" (click)="move(0, -step)">&#8593;</button>
+  <br>
+  <button aria-label="Left" (click)="move(-step, 0)" style="margin-right:8px;">&#8592;</button>
+  <button aria-label="Down" (click)="move(0, step)" style="margin-right:8px;">&#8595;</button>
+  <button aria-label="Right" (click)="move(step, 0)">&#8594;</button>
+</div>

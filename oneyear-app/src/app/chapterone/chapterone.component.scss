@@ -1,0 +1,23 @@
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  border: 2px solid #ccc;
+  margin: 32px auto 16px auto;
+  background: #f9f9f9;
+}
+.character {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.instructions {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.arrow-buttons {
+  text-align: center;
+}
