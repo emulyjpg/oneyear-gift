@@ -1,16 +1,17 @@
 // iMessage-style chat UI
-.imessage-bg {
+.message-bg {
   background: #e5e5ea;
   min-height: 100vh;
   padding: 32px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 500px;
 }
 
-.imessage-chat {
+.message-chat {
   width: 100%;
-  max-width: 400px;
+   max-width: 400px;
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -31,20 +32,22 @@
   background: #007aff;
   color: #fff;
   align-self: flex-end;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 22px;
-  border-top-right-radius: 22px;
-  border-top-left-radius: 22px;
+  padding: 6px;
+//   border-bottom-right-radius: 6px;
+//   border-bottom-left-radius: 22px;
+//   border-top-right-radius: 22px;
+//   border-top-left-radius: 22px;
 }
 
 .robot {
   background: #f1f0f0;
   color: #222;
   align-self: flex-start;
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 22px;
-  border-top-right-radius: 22px;
-  border-top-left-radius: 22px;
+  padding: 6px;
+//   border-bottom-left-radius: 6px;
+//   border-bottom-right-radius: 22px;
+//   border-top-right-radius: 22px;
+//   border-top-left-radius: 22px;
 }
 
 .choices-row {

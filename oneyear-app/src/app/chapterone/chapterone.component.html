@@ -1,19 +1,63 @@
+<div class="instructions">Chapter 1: The Day That I Met You</div>
+<div class="win">{{winMessage}}</div>
+<div class="instructions">Score: {{score}}</div>
 <div class="game-container">
+    
+    <div class="rocks">
+    <!-- rock 11: left finish hold -->
+  <div class="rock-row right-middle"><img class="right" src="img/rock7.png" /></div>
+  <!-- rock 10 right -->
+  <div class="rock-row right-right"><img class="left" src="img/rock3.png" /></div>
+  <!-- rock 9 right -->
+  <div class="rock-row right-middle"><img class="right" src="img/rock1.png" /></div>
+  <!-- rock 8 right -->
+  <div class="rock-row left-middle"><img class="left" src="img/rock6.png" /></div>
+  <!-- rock 7 left -->
+  <div class="rock-row left-left"><img class="right" src="img/rock5.png" /></div>
+  <!-- rock 6 left -->
+  <div class="rock-row left-middle"><img class="left" src="img/rock2.png" /></div>
+  <!-- rock 5 right -->
+  <div class="rock-row right-middle"><img class="right" src="img/rock3.png" /></div>
+  <!-- rock 4 left -->
+  <div class="rock-row left-middle"><img class="left" src="img/rock1.png" /></div>
+  <!-- rock 3 left -->
+  <div class="rock-row right-middle"><img class="right" src="img/rock7.png" /></div>
+  <!-- rock 2 right -->
+  <div class="rock-row right-right"><img class="left" src="img/rock6.png" /></div>
+  <!-- rock 1 right -->
+  <div class="rock-row right-middle"><img class="right" src="img/rock5.png" /></div>
+  <!-- rock 0 left -->
+  <div class="rock-row left-middle"><img class="left" src="img/rock4.png" /></div>
+</div>
+
   <div
     class="character"
     [style.left.px]="pos.x"
     [style.top.px]="pos.y"
   >
-    <mat-icon>circle</mat-icon>
+    <!-- <mat-icon>circle</mat-icon> -->
+     <img [src]="characterImage" style="width:150px;" alt="Character" />
   </div>
+  <div
+    class="character"
+    [style.left.px]="0"
+    [style.top.px]="450"
+  >
+    <!-- <mat-icon>circle</mat-icon> -->
+     <img [src]="emilyImage" style="width:120px;" alt="Character" />
+  </div>
+  
 </div>
-<div class="instructions">
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+    
   Use the arrow buttons to move the character.
 </div>
-<div class="arrow-buttons">
-  <button aria-label="Up" (click)="move(0, -step)">&#8593;</button>
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
   <br>
-  <button aria-label="Left" (click)="move(-step, 0)" style="margin-right:8px;">&#8592;</button>
-  <button aria-label="Down" (click)="move(0, step)" style="margin-right:8px;">&#8595;</button>
-  <button aria-label="Right" (click)="move(step, 0)">&#8594;</button>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <!-- <button aria-label="Down" (click)="move(0, step, 'none')" style="margin-right:8px;">&#8595;</button> -->
+  <button aria-label="Right" (click)="move('right')">></button>
 </div>
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions"><button (click)="move('reset')" style="margin-right:8px;">Try Again</button></div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions"><button>Next Chapter...</button></div>

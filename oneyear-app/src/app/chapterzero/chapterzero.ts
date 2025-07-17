@@ -12,12 +12,12 @@ import { FormsModule } from '@angular/forms';
 export class ChapterzeroComponent {
 
   messages = [
-    { sender: 'robot', text: 'Hey!! This is Emily :-)' }
+    { sender: 'robot', text: 'Just got home, thank you for today!' }
   ];
   nextMessages = [
-     { sender: 'user', text: 'Heyhey, sorry about the late response. First day kinda crazy with everything going on' },
-    { sender: 'user', text: 'How are you doing' },
-    { sender: 'robot', text: 'Duuude totally okay, go kill it out there! Lets chat later' }
+     { sender: 'user', text: 'I have survived my travels' }
+    ,{ sender: 'user', text: 'Thank you so much for today, i really enjoyed it <3' }
+    ,{ sender: 'user', text: 'Let me know if you want to go to niki, i can change it around so that we can go' }
   ];
   count = 0;
   
@@ -27,16 +27,16 @@ export class ChapterzeroComponent {
   handleChoice(choice: string) {
     //this.messages.push({ sender: 'user', text: choice });
     //const reply = this.getRobotReply(choice);
-    this.messages.push(this.getRobotReply(choice));
-    this.count++;
+    
     if (this.count < this.nextMessages.length) {
+      this.messages.push(this.getRobotReply(choice));
       this.count++;
     }
   }
 
   public getRobotReply(input: string): any {
     const lower = input.toLowerCase();
-    if (lower.includes('next')) {
+    if (lower.includes('next') && this.count < this.nextMessages.length) {
       return this.nextMessages[this.count]; // "Blue is calming! Do you like the ocean?"
     }
     // else {

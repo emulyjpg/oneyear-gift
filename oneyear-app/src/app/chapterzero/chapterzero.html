@@ -1,6 +1,6 @@
-<div class="imessage-bg">
-  <div class="imessage-chat">
-    <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'bubble user' : 'bubble robot'">
+<div class="message-bg">
+  <div class="message-chat">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'user' : 'robot'">
       <span>{{ msg.text }}</span>
     </div>
   </div>
