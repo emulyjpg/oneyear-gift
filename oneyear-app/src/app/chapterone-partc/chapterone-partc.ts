@@ -5,12 +5,12 @@ import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-chapterone-partb',
+  selector: 'app-chapterone-partc',
   imports: [MatIconModule, CommonModule, FormsModule],
-  templateUrl: './chapterone-partb.html',
-  styleUrl: './chapterone-partb.scss'
+  templateUrl: './chapterone-partc.html',
+  styleUrl: './chapterone-partc.scss'
 })
-export class ChapteronePartb {
+export class ChapteronePartc {
 constructor(private router: Router) {}
   pos = { x: 180, y: 400 };
   readonly step = 20;
@@ -33,7 +33,7 @@ emilyImage = 'img/emilycheer.png';
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterone/partc']);
+      this.router.navigate(['chaptertwo']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');
@@ -64,5 +64,4 @@ emilyImage = 'img/emilycheer.png';
     }
   }
 }
-
 }
