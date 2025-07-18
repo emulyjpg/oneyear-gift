@@ -1,6 +1,6 @@
 <div class="instructions">Chapter 1: The Day That I Met You</div>
+<!-- <div class="instructions">Score: {{score}}</div> -->
 <div class="win">{{winMessage}}</div>
-<div class="instructions">Score: {{score}}</div>
 <div class="game-container">
     
     <div class="rocks">
@@ -41,7 +41,7 @@
   <div
     class="character"
     [style.left.px]="0"
-    [style.top.px]="450"
+    [style.top.px]="430"
   >
     <!-- <mat-icon>circle</mat-icon> -->
      <img [src]="emilyImage" style="width:120px;" alt="Character" />
@@ -51,13 +51,17 @@
 
 <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
     
-  Use the arrow buttons to move the character.
+  Use only left or right arrow keys to move the character.
 </div>
-<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
   <br>
   <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
-  <!-- <button aria-label="Down" (click)="move(0, step, 'none')" style="margin-right:8px;">&#8595;</button> -->
   <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions">
+    Press enter to try again.
 </div>
-<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions"><button (click)="move('reset')" style="margin-right:8px;">Try Again</button></div>
-<div *ngIf="winMessage == 'WIN!!'" class="instructions"><button>Next Chapter...</button></div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

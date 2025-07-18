@@ -1,0 +1,18 @@
+<audio controls>
+  <source src="sounds/nikiconcert.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="message-bg">
+  <div class="layout-container">
+    <div class="message-chat">
+      <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'user' : 'robot'">
+        <span>{{ msg.text }}</span>
+      </div>
+      <div class="choices-row">
+        
+        Press enter to continue.
+      </div>
+    </div>
+    <img *ngIf="showPics" src="img/nikiconcert.gif" alt="Niki Concert" class="nikiconcert"/>
+  </div>
+</div>

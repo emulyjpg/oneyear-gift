@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chapterone',
@@ -10,6 +11,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./chapterone.component.scss']
 })
 export class ChapterOne {
+constructor(private router: Router) {}
   pos = { x: 180, y: 400 };
   readonly step = 20;
   readonly boxSize = 400;
@@ -165,18 +167,25 @@ emilyImage = 'img/emilycheer.png';
     default:
         console.log(`Unhandled direction: ${direction}`);
     }
+  }
+  
 
-
-
-    // if(direction == "left") {
-    //     console.log('Moving left');
-    //     this.characterImage = 'img/8bitclimbleft.png';
-    // } else if(direction == "right") {
-    //     console.log('Moving right');
-    //     this.characterImage = 'img/8bitclimbright.png';
-    // }   else {
-    //     console.log('Moving default');
-    //     this.characterImage = 'img/8bitfriendOG.png';
-    // }
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    console.log('Key pressed:', event.key);
+    if(event.key == "Enter" && this.winMessage == "WIN!!") {
+      this.router.navigate(['chapterone/partb']);
+    }
+    else if(event.key == "Enter" && this.winMessage == "Oh no! You fell!") {
+        this.move('reset');
+    }
+    else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
+        this.move('left');
+    }
+    else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
+        this.move('right');
+    }
+    // Add custom logic here based on the pressed key
+    // For example, trigger a function or update a property
   }
 }
