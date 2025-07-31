@@ -1,0 +1,22 @@
+
+<div class="instructions">Chapter 3: Day 1</div>
+<div class="win">{{winMessage}}</div>
+<canvas #canvas class="canvas" width="400" height="300"></canvas>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+  Emily watched in admiration, seeing Alan's determination at the claw machines.
+  <br>He was focused, his eyes fixed on the prize.
+  <br>
+  <br>Use only left or right arrow keys to move the claw. Use up and down arrow keys to adjust swing power. Press enter to go.
+</div>
+<div class="instructions">
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<button (click)="resetBall()">Restart</button>
+
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

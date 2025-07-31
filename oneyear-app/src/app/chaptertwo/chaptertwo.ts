@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chaptertwo',
@@ -8,6 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './chaptertwo.scss'
 })
 export class Chaptertwo {
+  constructor(private router: Router) {}
 messages = [
     { sender: 'robot', text: 'Just got home, thank you for today!' }
   ];
@@ -18,6 +20,7 @@ messages = [
   ];
   count = 0;
   showPics: boolean = false;
+  nextChapter: boolean = false;
   
   // Remove userInput, use buttons instead
 
@@ -25,7 +28,9 @@ messages = [
   handleChoice(choice: string) {
     //this.messages.push({ sender: 'user', text: choice });
     //const reply = this.getRobotReply(choice);
-    
+    if(this.count == this.nextMessages.length && this.showPics) {
+      this.nextChapter = true;
+    }
     if (this.count < this.nextMessages.length) {
       this.messages.push(this.getRobotReply(choice));
       this.count++;
@@ -50,8 +55,13 @@ messages = [
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
-    if(event.key == "Enter") {
+    if(event.key == "Enter" && !this.showPics && !this.nextChapter) {
       this.handleChoice('next');
+    }
+    else if(event.key == "Enter" && this.showPics) {
+      this.handleChoice('next');
+      console.log("Navigating to Chapter Three Part A");
+      this.router.navigate(['chapterthree/parta']);
     }
     // Add custom logic here based on the pressed key
     // For example, trigger a function or update a property

@@ -1,7 +1,5 @@
-<audio controls>
-  <source src="sounds/nikiconcert.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+<div class="instructions">Chapter 2: NIKI Concert!</div>
+<!-- <div class="win">{{winMessage}}</div> -->
 <div class="message-bg">
   <div class="layout-container">
     <div class="message-chat">
@@ -13,6 +11,9 @@
         Press enter to continue.
       </div>
     </div>
-    <img *ngIf="showPics" src="img/nikiconcert.gif" alt="Niki Concert" class="nikiconcert"/>
+    <video autoplay muted playsinline>
+  <source *ngIf="showPics" src="videos/nikivideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   </div>
 </div>
