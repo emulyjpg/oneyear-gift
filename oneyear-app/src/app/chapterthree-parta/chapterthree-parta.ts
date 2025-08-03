@@ -25,6 +25,7 @@ export class ChapterthreeParta {
   maxPower = 50;
   minPower = 5;
   winMessage = "Puttery Golf Time!";
+  hasConfirmedWin = false;
 
   ngOnInit() {
     // Wait for canvas to be available
@@ -40,32 +41,45 @@ export class ChapterthreeParta {
   @HostListener('window:keydown', ['$event'])
   handleKey(event: KeyboardEvent) {
     if (this.isMoving) return;
+    if (this.winMessage === "WIN!!") {
+        if (event.key.toLowerCase() === "enter") {
+          if (!this.hasConfirmedWin) {
+            this.hasConfirmedWin = true;
+          } else {
+            this.router.navigate(['chapterthree/partb']);
+          }
+        }
+        return;
+      }
+
+
     if (this.winMessage == "WIN!!" && event.key.toLowerCase() == "enter") {
-      //this.router.navigate(['chapterthree/partb']);
+      this.router.navigate(['chapterthree/partb']);
       return;
     }
-
-    switch (event.key.toLowerCase()) {
-      case 'arrowleft':
-      case 'a':
-        this.aimAngle -= 0.1;
-        break;
-      case 'arrowright':
-      case 'd':
-        this.aimAngle += 0.1;
-        break;
-      case 'arrowup':
-      case 'w':
-        this.power = Math.min(this.power + 2, this.maxPower);
-        break;
-      case 'arrowdown':
-      case 's':
-        this.power = Math.max(this.power - 2, this.minPower);
-        break;
-      case ' ':
-      case 'enter':
-        this.shoot();
-        break;
+    if(this.winMessage == "Puttery Golf Time!") {
+      switch (event.key.toLowerCase()) {
+        case 'arrowleft':
+        case 'a':
+          this.aimAngle -= 0.1;
+          break;
+        case 'arrowright':
+        case 'd':
+          this.aimAngle += 0.1;
+          break;
+        case 'arrowup':
+        case 'w':
+          this.power = Math.min(this.power + 2, this.maxPower);
+          break;
+        case 'arrowdown':
+        case 's':
+          this.power = Math.max(this.power - 2, this.minPower);
+          break;
+        case ' ':
+        case 'enter':
+          this.shoot();
+          break;
+      }
     }
 
     this.draw();
@@ -107,7 +121,7 @@ export class ChapterthreeParta {
     if (distance < this.hole.radius) {
       this.winMessage = "WIN!!";
       this.isMoving = false;
-      setTimeout(() => this.resetBall(), 2000); // Auto-reset after win
+      //setTimeout(() => this.resetBall(), 2000); // Auto-reset after win
     }
   }
 
