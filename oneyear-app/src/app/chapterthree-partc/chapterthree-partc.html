@@ -1,0 +1,22 @@
+<div class="instructions">Chapter 3: Day 1</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/day1gif.gif" />
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+  "Will you be my girlfriend?" Alan asks.
+  <br>How does Emily respond?
+</div>
+<div class="instructions">
+<input type="text"
+       [ngModel]="plateCount"
+       [disabled]="winMessage === 'WIN!!'"
+       (input)="onPlateCountChange($event)"
+/><br>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

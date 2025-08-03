@@ -70,7 +70,7 @@ checkWinCondition(): boolean {
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
      if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      //this.router.navigate(['chapterthree/partc']);
+      this.router.navigate(['chapterthree/partc']);
     }
   }
 
