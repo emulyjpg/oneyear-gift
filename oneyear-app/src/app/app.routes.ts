@@ -8,6 +8,7 @@ import { ChapteronePartc } from './chapterone-partc/chapterone-partc';
 import { ChapterthreeParta } from './chapterthree-parta/chapterthree-parta';
 import { ChapterthreePartb } from './chapterthree-partb/chapterthree-partb';
 import { ChapterthreePartc } from './chapterthree-partc/chapterthree-partc';
+import { ChapterfourParta } from './chapterfour-parta/chapterfour-parta';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -19,5 +20,6 @@ export const routes: Routes = [
   ,{ path: 'chapterthree/parta', component: ChapterthreeParta }
   ,{ path: 'chapterthree/partb', component: ChapterthreePartb }
   ,{ path: 'chapterthree/partc', component: ChapterthreePartc }
+  ,{ path: 'chapterfour/parta', component: ChapterfourParta }
   // Add more routes as needed
 ];
