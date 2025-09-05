@@ -1,1 +1,14 @@
-<p>chapterseven-parta works!</p>
+<div class="instructions">Chapter 7: Crawfish Season!</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img src="img/crawfish.png" alt="Plate" class="plate" *ngFor="let dummy of ' '.repeat(loadCount).split(''), let x = index" />
+</div>
+
+
+<div class="instructions">
+    <br>
+    <button aria-label="Left" (click)="loading()" *ngIf="winMessage != 'WIN!!'" style="margin-right:8px;">Click to eat the crawfish!</button>
+    <div *ngIf="winMessage == 'WIN!!'" class="instructions">
+    Press enter to continue.
+    </div>
+</div>
