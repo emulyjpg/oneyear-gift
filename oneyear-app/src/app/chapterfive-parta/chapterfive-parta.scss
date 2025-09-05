@@ -1,0 +1,148 @@
+.game-container {
+  position: relative;
+  width: 400px;
+//   height: 500px;
+  border: 2px solid #ccc;
+  margin: 0px auto 0px auto;
+  background: #C0C0C0;
+  .rocks {
+    img {position: absolute;
+        height: 40px;
+    }
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers each rock horizontally */;
+  margin-bottom: 20px;
+}
+.scene {
+  position: relative;
+  width: 800px;  // adjust as needed
+  height: 600px;
+  overflow: hidden;
+}
+
+.track {
+  width: 100%;
+  height: 100%;
+}
+
+.train {
+  position: absolute;
+  width: 100px;  // adjust to match your image
+  height: auto;
+  transition: left 0.1s linear, top 0.1s linear;
+}
+
+
+.rock-row {
+    position: absolute;
+  height: 10px;
+  text-align: center;
+  margin: 10px 0;
+  &.left-left {
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  &.left-middle {
+    margin-left: 100px;
+    align-self: flex-start;
+  }
+   &.right-middle {
+    margin-right: 100px;
+    align-self: flex-end;
+  }
+  &.right-right {
+    margin-right: 10px;
+    align-self: flex-end;
+  }
+}
+
+    
+}
+.character {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    }
+.instructions {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.win {
+  text-align: center;
+  margin-bottom: 8px;
+  color: red;
+}
+.arrow-buttons {
+  text-align: center;
+  button {
+    width: 100px;
+    height: 50px;
+  }
+  
+}
+.plate {
+    height: 40px;
+    align-content: baseline;
+  }
+.maze-container {
+  display: inline-block;
+  background: #111927;
+  padding: 16px;
+  //border-radius: 16px;
+  //box-shadow: 0 0 24px #000a;
+  margin: 0 auto 16px auto;
+}
+.maze-row {
+  display: flex;
+}
+.maze-cell {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  //border-radius: 8px;
+  margin: 1px;
+  background: #222b3a;
+  color: #fff;
+  position: relative;
+}
+.wall {
+  background: #2d3a4d;
+  //box-shadow: 0 0 4px #0008 inset;
+}
+.goal {
+  background: #1e2d1e;
+  color: #7fffd4;
+  font-weight: bold;
+}
+.player {
+  background: #fff;
+  color: #2d8fff;
+  font-weight: bold;
+  //box-shadow: 0 0 8px #2d8fff;
+  z-index: 2;
+}
+
+button {
+  background: #2d8fff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+button:hover {
+  background: #1a5fb4;
+}
+
+

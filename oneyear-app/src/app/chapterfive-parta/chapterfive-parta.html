@@ -1,0 +1,22 @@
+<div class="instructions">Chapter 5: Space Explorers: The Infinite</div>
+<div class="win" *ngIf="winMessage">{{winMessage}}</div>
+<div class="maze-container">
+  <div *ngFor="let row of maze; let y = index" class="maze-row">
+    <div *ngFor="let cell of row; let x = index"
+         class="maze-cell"
+         [ngClass]="{
+           'wall': cell === '#',
+           'goal': cell === 'G',
+           'player': player.x === x && player.y === y
+         }">
+      <span *ngIf="player.x === x && player.y === y">•</span>
+      <span *ngIf="cell === 'G' && !(player.x === x && player.y === y)">🚀</span>
+    </div>
+  </div>
+</div>
+<div class="instructions" *ngIf="!winMessage">
+  Use arrow keys to move the dot through the VR space!
+</div>
+<div *ngIf="winMessage == 'WIN!!' || winMessage == 'FULL WIN!!'" class="instructions">
+  Press enter to continue.
+</div>

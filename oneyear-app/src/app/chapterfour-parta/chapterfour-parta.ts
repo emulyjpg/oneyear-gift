@@ -43,7 +43,7 @@ winTwo = false;
     // }
     else if(event.key == "Enter" && this.winMessage == "WIN!!")
     {
-      //this.router.navigate(['chaptertwo']);
+      this.router.navigate(['chapterfive/parta']);
     }
   }
 
