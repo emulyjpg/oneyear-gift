@@ -1,1 +1,16 @@
-<p>chaptereight-parta works!</p>
+<div class="instructions">Chapter 8: Valentine's Day "Hidden" Omakase</div>
+<div class="win" *ngIf="winMessage">{{winMessage}}</div>
+<div class="memory-game">
+  <div class="card" *ngFor="let card of cards; let i = index" [class.flipped]="card.flipped || card.matched" (click)="flipCard(i)">
+    <div class="card-front">?</div>
+    <div class="card-back">
+        <img [src]="card.icon" alt="memory card" />
+    </div>
+  </div>
+</div>
+<div class="game-status">
+  <span *ngIf="matchedCount < cards.length">Matches: {{ matchedCount / 2 }}</span>
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
