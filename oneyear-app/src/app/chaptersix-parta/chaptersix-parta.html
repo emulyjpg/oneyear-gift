@@ -1,0 +1,14 @@
+<div class="instructions">Chapter Six: A Christmas Surprise!</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" *ngIf="winMessage == 'WIN!!'" src="img/christmasmarket.png" />
+</div>
+
+
+<div class="instructions">
+    <button aria-label="Left" (click)="loading()" *ngIf="winMessage != 'WIN!!'" style="margin-right:8px;">Click to process the image!</button>
+    <div *ngIf="winMessage == 'WIN!!'" class="instructions">
+    Press enter to continue.
+    </div>
+    <img src="img/plate.png" alt="Plate" class="plate" *ngFor="let dummy of ' '.repeat(plateCount).split(''), let x = index" />
+</div>

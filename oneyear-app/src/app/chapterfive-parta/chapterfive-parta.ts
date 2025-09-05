@@ -28,7 +28,7 @@ export class ChapterfiveParta {
 
   @HostListener('window:keydown', ['$event'])
   handleKeyDown(event: KeyboardEvent) {
-    if (this.winMessage) return;
+    //if (this.winMessage) return;
     let dx = 0, dy = 0;
     if (event.key === 'ArrowUp') dy = -1;
     else if (event.key === 'ArrowDown') dy = 1;
@@ -36,7 +36,7 @@ export class ChapterfiveParta {
     else if (event.key === 'ArrowRight') dx = 1;
     else if(event.key == "Enter" && this.winMessage == "WIN!!")
     {
-      this.router.navigate(['chapterfive/parta']);
+      this.router.navigate(['chaptersix/parta']);
     }
     else return;
     const nx = this.player.x + dx;
