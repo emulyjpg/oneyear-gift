@@ -1,1 +1,22 @@
-<p>chapternine-parta works!</p>
+<div class="instructions">Chapter 9: Happy Birthday, Alan!</div>
+<div class="win" *ngIf="winMessage">{{winMessage}}</div>
+<div class="pizza-container">
+  <img src="img/crocs.png" class="pizza-base" />
+
+  <div
+  class="topping"
+  *ngFor="let topping of toppings"
+  cdkDrag
+  #dragRef="cdkDrag"
+  (cdkDragStarted)="dragRef.data = topping"
+    >
+  <img [src]="topping.icon" [alt]="topping.name" />
+</div>
+
+
+
+
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
