@@ -1,1 +1,35 @@
-<p>chapterten-parta works!</p>
+<div class="instructions">Chapter 10: Museum of Fine Arts</div>
+<!-- <div class="instructions">Score: {{score}}</div> -->
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/museum.png" />
+    
+    
+
+  <div
+    class="character"
+    [style.left.px]="pos.x"
+    [style.top.px]="pos.y"
+  >
+    <!-- <mat-icon>circle</mat-icon> -->
+     <img [src]="characterImage" style="width:150px;" alt="Character" />
+  </div>
+  
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+    
+  Use only left or right arrow keys to move the characters.
+</div>
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions">
+    Press enter to try again.
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->
