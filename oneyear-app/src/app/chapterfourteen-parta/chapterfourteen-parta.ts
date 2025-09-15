@@ -4,14 +4,13 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
-
 @Component({
-  selector: 'app-chaptertwelve-parta',
+  selector: 'app-chapterfourteen-parta',
   imports: [MatIconModule, CommonModule, FormsModule],
-  templateUrl: './chaptertwelve-parta.html',
-  styleUrl: './chaptertwelve-parta.scss'
+  templateUrl: './chapterfourteen-parta.html',
+  styleUrl: './chapterfourteen-parta.scss'
 })
-export class ChaptertwelveParta {
+export class ChapterfourteenParta {
 constructor(private router: Router) {}
   pos = { x: 180, y: 400 };
   readonly step = 20;
@@ -19,7 +18,7 @@ constructor(private router: Router) {}
   readonly charSize = 40;
   rockCount = 0;
   score = 0;
-  winMessage = "WIN!!";
+  winMessage = "When was national girlfriend day this year?";
   readonly leftLeftPos = 0;
   readonly leftMiddlePos = 140;
   readonly rightMiddlePos = 260;
@@ -27,14 +26,15 @@ constructor(private router: Router) {}
 characterImage = 'img/8bitfriendOG.png';
 emilyImage = 'img/emilycheer.png';
 
-  plateCount: number = 0; // Default value
+  answer = null; // Default value
   
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
+    console.log(this.answer);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterthirteen/parta']);
+      this.router.navigate(['chapterfifteen/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');
@@ -48,14 +48,7 @@ emilyImage = 'img/emilycheer.png';
 
   onPlateCountChange(event: any) {
   const value = event.target.value;
-  if (value.length > 3) {
-    event.target.value = value.slice(0, 3);
-    this.plateCount = parseInt(event.target.value, 10);
-  } else {
-    this.plateCount = parseInt(value, 10);
-    if(this.plateCount == 815)
-    {
-      //the date we first met
+  if (value == "2025-08-01") {
       this.winMessage = "WIN!!";
     }
     else
@@ -64,5 +57,4 @@ emilyImage = 'img/emilycheer.png';
       this.winMessage = "Not quite right, try again!";
     }
   }
-}
 }

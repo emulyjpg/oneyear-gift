@@ -1,0 +1,20 @@
+<div class="instructions">Chapter 13: Family Dinner</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/meetingalanfam.png" />
+</div>
+
+<div class="instructions">
+<input type="string"
+       [ngModel]="answer"
+       [disabled]="winMessage === 'WIN!!'"
+       (input)="onPlateCountChange($event)"
+/><br>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

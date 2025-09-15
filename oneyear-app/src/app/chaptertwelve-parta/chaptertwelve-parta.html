@@ -1,1 +1,18 @@
-<p>chaptertwelve-parta works!</p>
+<div class="instructions">Chapter 12: Fireworks Show for Independence Day</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/firework.gif" />
+</div>
+
+<div class="instructions">
+  The fireworks lit up the beautiful sky as Emily and Alan watched in awe. <br>
+  <br>Hermann Park was filled with the sounds of oohs and aahs from the crowd.
+  <br>
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+Press enter to continue.
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

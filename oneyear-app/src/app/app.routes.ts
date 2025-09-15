@@ -17,6 +17,10 @@ import { ChapternineParta } from './chapternine-parta/chapternine-parta';
 import { ChaptertenParta } from './chapterten-parta/chapterten-parta';
 import { ChapterelevenParta } from './chaptereleven-parta/chaptereleven-parta';
 import { ChaptertwelveParta } from './chaptertwelve-parta/chaptertwelve-parta';
+import { ChapterthirteenParta } from './chapterthirteen-parta/chapterthirteen-parta';
+import { ChapterfourteenParta } from './chapterfourteen-parta/chapterfourteen-parta';
+import { ChapterfifteenParta } from './chapterfifteen-parta/chapterfifteen-parta';
+import { ChaptersixteenParta } from './chaptersixteen-parta/chaptersixteen-parta';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -37,4 +41,8 @@ export const routes: Routes = [
   ,{ path: 'chapterten/parta', component: ChaptertenParta }
   ,{ path: 'chaptereleven/parta', component: ChapterelevenParta }
   ,{ path: 'chaptertwelve/parta', component: ChaptertwelveParta }
+  ,{ path: 'chapterthirteen/parta', component: ChapterthirteenParta }
+  ,{ path: 'chapterfourteen/parta', component: ChapterfourteenParta } //placeholder for now
+  ,{ path: 'chapterfifteen/parta', component: ChapterfifteenParta } //placeholder for now
+  ,{ path: 'chaptersixteen/parta', component: ChaptersixteenParta } //placeholder for now
 ];
