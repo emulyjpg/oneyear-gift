@@ -1,1 +1,29 @@
-<p>chaptereleven-parta works!</p>
+<div class="instructions">Chapter 11: Emily's Birthday Party!</div>
+<div class="instructions">List all 20 friends that were in the group photo at the party!</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <!-- <img class="game-container" src="img/museum.png" /> -->
+    <img [src]="'img/' + name + '.png'" alt="Plate" class="plate" *ngFor="let name of nameArray" />
+  
+</div>
+
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+    <input type="string"
+        [(ngModel)]="nameInput"
+        [disabled]="winMessage === 'WIN!!'"
+        (input)="onPlateCountChange($event)"
+    /><br>
+</div>
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions">
+    Press enter to try again.
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->
