@@ -1,0 +1,28 @@
+<div class="instructions">Final Chapter</div>
+<!-- <div class="win">{{winMessage}}</div> -->
+<div class="game-container">
+    <img class="game-container" src="img/finale.png" />
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+  Dear Alan,
+  <br>
+    I'm so grateful this past year. I hope that you enjoyed this storygame
+    app as much as I enjoyed recreating these memories using Angular! To be honest,
+     it really helped me appreciate all of the memories we made together. It also challenged
+     my coding skills LOL. Even though it is a simple game, I hope you can see all the love 
+     I put into making this for you. You are my favorite person in the world and I can't wait 
+     to make more memories with you. I love you so much.
+     <br>Happy 1st Anniversary!
+     <br>
+     <br> Love,
+     <br> Emily
+</div>
+<div class="win">
+    And they lived happilly ever after... <br>
+    The End.
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

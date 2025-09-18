@@ -36,17 +36,36 @@
     align-self: flex-end;
   }
 }
-
-    
 }
-.character {
-  position: absolute;
-  width: 40px;
-  height: 40px;
+
+.architecture-game {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.building-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-    }
+  margin-bottom: 1.5rem;
+}
+.building-img {
+  width: 120px;
+  height: auto;
+  margin-right: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.winner-message {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #198754;
+  font-weight: bold;
+  text-align: center;
+}
+
 .instructions {
   text-align: center;
   margin-top: 8px;
@@ -63,11 +82,4 @@
     width: 100px;
     height: 50px;
   }
-  
 }
-.plate {
-    height: 40px;
-    align-content: baseline;
-  }
-
-

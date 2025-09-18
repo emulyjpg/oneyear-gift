@@ -1,1 +1,26 @@
-<p>chaptersixteen-parta works! KPOP NIGHT!!</p>
+<div class="instructions">Chapter 16: K-Pop Night</div>
+
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" [src]="characterImage">
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! Try again.'" class="instructions">
+    
+  Complete the lyrics (no spaces): "I was really hoping that..."
+</div>
+<div class="instructions">
+  <span *ngFor="let a of answer">{{a}}</span>
+</div>
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! Try again.'" class="instructions">
+    Press enter to try again.
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

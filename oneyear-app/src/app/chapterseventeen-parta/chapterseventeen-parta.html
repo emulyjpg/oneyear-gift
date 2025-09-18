@@ -1,0 +1,20 @@
+<div class="instructions">Chapter 17: Chicago Architecture Boat Tour</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+        <img class="game-container" [src]="buildings[currentIndex].img" />
+    </div>
+
+<div class="instructions">
+  <div *ngIf="!isWinner" class="building-item">
+    
+  </div>
+   <div class="guess-section">
+      <input [(ngModel)]="guesses[currentIndex]" placeholder="Type the building name..." />
+      <!-- <button (click)="submitGuess()">Guess</button> -->
+      <div *ngIf="hints[currentIndex]" class="hint">Hint: {{ hints[currentIndex] }}</div>
+    </div>
+</div>
+
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>

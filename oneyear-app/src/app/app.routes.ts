@@ -21,6 +21,8 @@ import { ChapterthirteenParta } from './chapterthirteen-parta/chapterthirteen-pa
 import { ChapterfourteenParta } from './chapterfourteen-parta/chapterfourteen-parta';
 import { ChapterfifteenParta } from './chapterfifteen-parta/chapterfifteen-parta';
 import { ChaptersixteenParta } from './chaptersixteen-parta/chaptersixteen-parta';
+import { ChapterseventeenParta } from './chapterseventeen-parta/chapterseventeen-parta';
+import { ChapterfinalParta } from './chapterfinal-parta/chapterfinal-parta';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -45,4 +47,6 @@ export const routes: Routes = [
   ,{ path: 'chapterfourteen/parta', component: ChapterfourteenParta } //placeholder for now
   ,{ path: 'chapterfifteen/parta', component: ChapterfifteenParta } //placeholder for now
   ,{ path: 'chaptersixteen/parta', component: ChaptersixteenParta } //placeholder for now
+  ,{ path: 'chapterseventeen/parta', component: ChapterseventeenParta } //placeholder for now
+  ,{ path: 'chapterfinal/parta', component: ChapterfinalParta } //placeholder for now
 ];
