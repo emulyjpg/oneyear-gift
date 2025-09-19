@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "/oneyear-gift": {},
+    "/oneyear-gift/chaptereight/parta": {},
+    "/oneyear-gift/chaptereleven/parta": {},
+    "/oneyear-gift/chapterfifteen/parta": {},
+    "/oneyear-gift/chapterfinal/parta": {},
+    "/oneyear-gift/chapterfive/parta": {},
+    "/oneyear-gift/chapterfour/parta": {},
+    "/oneyear-gift/chapterfourteen/parta": {},
+    "/oneyear-gift/chapternine/parta": {},
+    "/oneyear-gift/chapterone": {},
+    "/oneyear-gift/chapterone/partb": {},
+    "/oneyear-gift/chapterone/partc": {},
+    "/oneyear-gift/chapterseven/parta": {},
+    "/oneyear-gift/chapterseventeen/parta": {},
+    "/oneyear-gift/chaptersix/parta": {},
+    "/oneyear-gift/chaptersixteen/parta": {},
+    "/oneyear-gift/chapterten/parta": {},
+    "/oneyear-gift/chapterthirteen/parta": {},
+    "/oneyear-gift/chapterthree/parta": {},
+    "/oneyear-gift/chapterthree/partb": {},
+    "/oneyear-gift/chapterthree/partc": {},
+    "/oneyear-gift/chaptertwelve/parta": {},
+    "/oneyear-gift/chaptertwo": {},
+    "/oneyear-gift/home": {}
+  }
+}
