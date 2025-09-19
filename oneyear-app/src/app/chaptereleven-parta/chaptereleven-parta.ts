@@ -69,10 +69,10 @@ emilyImage = 'img/emilycheer.png';
   onPlateCountChange(event: any) {
     const value = event.target.value;
     console.log(value);
-    if(this.answerArray.includes(value) && !this.nameArray.includes(value))
+    if(this.answerArray.includes(value.toLowerCase()) && !this.nameArray.includes(value))
     {
       //the date we first met
-      this.nameArray.push(value);
+      this.nameArray.push(value.toLowerCase());
       this.nameInput = ''; //clear input field
       //this.winMessage = "WIN!!";
     }

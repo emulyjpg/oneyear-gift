@@ -16,7 +16,7 @@ constructor(private router: Router) {}
 characterImage = 'img/8bitfriendOG.png';
 emilyImage = 'img/emilycheer.png';
 
-  plateCount: number = 0; // Default value
+  plateCount: string = ''; // Default value
   
 
   @HostListener('document:keydown', ['$event'])

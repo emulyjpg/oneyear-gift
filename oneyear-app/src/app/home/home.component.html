@@ -1,7 +1,14 @@
 <div class="instructions">Our 1st Year</div>
-<p>Select a chapter to begin:</p>
-<div class="home-menu">
+
+<div *ngIf="!showChapters" class="home-menu">
+  <button class="home-menu" (click)="goTo('chapterone')">Start</button>
+  <button class="home-menu" (click)="showChapterSelect()">Chapter Select</button>
+</div>
+
+<div *ngIf="showChapters" class="home-menu">
+  <p>Select a chapter to begin:</p>
   <button class="home-menu" *ngFor="let chapter of chapters" (click)="goTo(chapter.path)">
     {{ chapter.label }}
   </button>
+  <button class="back-button" (click)="hideChapterSelect()">Back</button>
 </div>
