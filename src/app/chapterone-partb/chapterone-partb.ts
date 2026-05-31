@@ -52,7 +52,7 @@ emilyImage = 'img/emilycheer.png';
     this.plateCount = parseInt(event.target.value, 10);
   } else {
     this.plateCount = parseInt(value, 10);
-    if(this.plateCount == 915)
+    if(this.plateCount == 915) //please check this
     {
       //the date we first met
       this.winMessage = "WIN!!";
