@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/oneyear-gift',
   supportedLocales: {
   "en-US": ""
 },
