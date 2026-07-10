@@ -28,7 +28,7 @@ export class ChaptersixParta {
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterseven/parta']);
+      this.router.navigate(['first-year/chapterseven/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');

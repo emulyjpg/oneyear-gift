@@ -33,7 +33,7 @@ emilyImage = 'img/emilycheer.png';
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chaptersixteen/parta']);
+      this.router.navigate(['first-year/chaptersixteen/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');

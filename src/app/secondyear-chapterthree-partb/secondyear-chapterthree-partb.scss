@@ -1,0 +1,58 @@
+.pixel-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pixel {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #ccc;
+  align-items: center;
+  justify-content: center;
+}
+.palette {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  background-color: #1e1e1e;
+  border: 2px solid #444;
+  //border-radius: 8px;
+  max-width: 320px;
+}
+
+.swatch {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #ccc;
+  //border-radius: 4px;
+  cursor: pointer;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    border-color: #fff;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+  }
+}
+.swatch.selected {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.instructions {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.win {
+  text-align: center;
+  margin-bottom: 8px;
+  color: red;
+}

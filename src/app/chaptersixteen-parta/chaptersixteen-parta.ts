@@ -234,7 +234,7 @@ answer: string[] = [];
     console.log('Key pressed:', event.key);
     let isLetter = event.key.length === 1 && event.key.match(/[a-z]/i);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterseventeen/parta']);
+      this.router.navigate(['first-year/chapterseventeen/parta']);
     }
     else if(event.key == "Enter" && this.winMessage == "Oh no! Try again.") {
         this.move('reset');

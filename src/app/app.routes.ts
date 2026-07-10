@@ -23,6 +23,28 @@ import { ChapterfifteenParta } from './chapterfifteen-parta/chapterfifteen-parta
 import { ChaptersixteenParta } from './chaptersixteen-parta/chaptersixteen-parta';
 import { ChapterseventeenParta } from './chapterseventeen-parta/chapterseventeen-parta';
 import { ChapterfinalParta } from './chapterfinal-parta/chapterfinal-parta';
+import { SecondYearChapterOne } from './secondyear-chapterone/secondyear-chapterone.component';
+import { SecondYearChapteronePartb } from './secondyear-chapterone-partb/secondyear-chapterone-partb';
+import { SecondYearChapteronePartc } from './secondyear-chapterone-partc/secondyear-chapterone-partc';
+import { SecondYearChaptertwo } from './secondyear-chaptertwo/secondyear-chaptertwo';
+import { SecondYearChapterthreeParta } from './secondyear-chapterthree-parta/secondyear-chapterthree-parta';
+import { SecondYearChapterthreePartb } from './secondyear-chapterthree-partb/secondyear-chapterthree-partb';
+import { SecondYearChapterthreePartc } from './secondyear-chapterthree-partc/secondyear-chapterthree-partc';
+import { SecondYearChapterfourParta } from './secondyear-chapterfour-parta/secondyear-chapterfour-parta';
+import { SecondYearChapterfiveParta } from './secondyear-chapterfive-parta/secondyear-chapterfive-parta';
+import { SecondYearChaptersixParta } from './secondyear-chaptersix-parta/secondyear-chaptersix-parta';
+import { SecondYearChaptersevenParta } from './secondyear-chapterseven-parta/secondyear-chapterseven-parta';
+import { SecondYearChaptereightParta } from './secondyear-chaptereight-parta/secondyear-chaptereight-parta';
+import { SecondYearChapternineParta } from './secondyear-chapternine-parta/secondyear-chapternine-parta';
+import { SecondYearChaptertenParta } from './secondyear-chapterten-parta/secondyear-chapterten-parta';
+import { SecondYearChapterelevenParta } from './secondyear-chaptereleven-parta/secondyear-chaptereleven-parta';
+import { SecondYearChaptertwelveParta } from './secondyear-chaptertwelve-parta/secondyear-chaptertwelve-parta';
+import { SecondYearChapterthirteenParta } from './secondyear-chapterthirteen-parta/secondyear-chapterthirteen-parta';
+import { SecondYearChapterfourteenParta } from './secondyear-chapterfourteen-parta/secondyear-chapterfourteen-parta';
+import { SecondYearChapterfifteenParta } from './secondyear-chapterfifteen-parta/secondyear-chapterfifteen-parta';
+import { SecondYearChaptersixteenParta } from './secondyear-chaptersixteen-parta/secondyear-chaptersixteen-parta';
+import { SecondYearChapterseventeenParta } from './secondyear-chapterseventeen-parta/secondyear-chapterseventeen-parta';
+import { SecondYearChapterfinalParta } from './secondyear-chapterfinal-parta/secondyear-chapterfinal-parta';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent }
@@ -49,4 +71,48 @@ export const routes: Routes = [
   ,{ path: 'chaptersixteen/parta', component: ChaptersixteenParta } //placeholder for now
   ,{ path: 'chapterseventeen/parta', component: ChapterseventeenParta } //placeholder for now
   ,{ path: 'chapterfinal/parta', component: ChapterfinalParta } //placeholder for now
+  ,{ path: 'first-year/chapterone', component: ChapterOne }
+  ,{ path: 'first-year/chapterone/partb', component: ChapteronePartb }
+  ,{ path: 'first-year/chapterone/partc', component: ChapteronePartc }
+  ,{ path: 'first-year/chaptertwo', component: Chaptertwo }
+  ,{ path: 'first-year/chapterthree/parta', component: ChapterthreeParta }
+  ,{ path: 'first-year/chapterthree/partb', component: ChapterthreePartb }
+  ,{ path: 'first-year/chapterthree/partc', component: ChapterthreePartc }
+  ,{ path: 'first-year/chapterfour/parta', component: ChapterfourParta }
+  ,{ path: 'first-year/chapterfive/parta', component: ChapterfiveParta }
+  ,{ path: 'first-year/chaptersix/parta', component: ChaptersixParta }
+  ,{ path: 'first-year/chapterseven/parta', component: ChaptersevenParta }
+  ,{ path: 'first-year/chaptereight/parta', component: ChaptereightParta }
+  ,{ path: 'first-year/chapternine/parta', component: ChapternineParta }
+  ,{ path: 'first-year/chapterten/parta', component: ChaptertenParta }
+  ,{ path: 'first-year/chaptereleven/parta', component: ChapterelevenParta }
+  ,{ path: 'first-year/chaptertwelve/parta', component: ChaptertwelveParta }
+  ,{ path: 'first-year/chapterthirteen/parta', component: ChapterthirteenParta }
+  ,{ path: 'first-year/chapterfourteen/parta', component: ChapterfourteenParta }
+  ,{ path: 'first-year/chapterfifteen/parta', component: ChapterfifteenParta }
+  ,{ path: 'first-year/chaptersixteen/parta', component: ChaptersixteenParta }
+  ,{ path: 'first-year/chapterseventeen/parta', component: ChapterseventeenParta }
+  ,{ path: 'first-year/chapterfinal/parta', component: ChapterfinalParta }
+  ,{ path: 'second-year/chapterone', component: SecondYearChapterOne }
+  ,{ path: 'second-year/chapterone/partb', component: SecondYearChapteronePartb }
+  ,{ path: 'second-year/chapterone/partc', component: SecondYearChapteronePartc }
+  ,{ path: 'second-year/chaptertwo', component: SecondYearChaptertwo }
+  ,{ path: 'second-year/chapterthree/parta', component: SecondYearChapterthreeParta }
+  ,{ path: 'second-year/chapterthree/partb', component: SecondYearChapterthreePartb }
+  ,{ path: 'second-year/chapterthree/partc', component: SecondYearChapterthreePartc }
+  ,{ path: 'second-year/chapterfour/parta', component: SecondYearChapterfourParta }
+  ,{ path: 'second-year/chapterfive/parta', component: SecondYearChapterfiveParta }
+  ,{ path: 'second-year/chaptersix/parta', component: SecondYearChaptersixParta }
+  ,{ path: 'second-year/chapterseven/parta', component: SecondYearChaptersevenParta }
+  ,{ path: 'second-year/chaptereight/parta', component: SecondYearChaptereightParta }
+  ,{ path: 'second-year/chapternine/parta', component: SecondYearChapternineParta }
+  ,{ path: 'second-year/chapterten/parta', component: SecondYearChaptertenParta }
+  ,{ path: 'second-year/chaptereleven/parta', component: SecondYearChapterelevenParta }
+  ,{ path: 'second-year/chaptertwelve/parta', component: SecondYearChaptertwelveParta }
+  ,{ path: 'second-year/chapterthirteen/parta', component: SecondYearChapterthirteenParta }
+  ,{ path: 'second-year/chapterfourteen/parta', component: SecondYearChapterfourteenParta }
+  ,{ path: 'second-year/chapterfifteen/parta', component: SecondYearChapterfifteenParta }
+  ,{ path: 'second-year/chaptersixteen/parta', component: SecondYearChaptersixteenParta }
+  ,{ path: 'second-year/chapterseventeen/parta', component: SecondYearChapterseventeenParta }
+  ,{ path: 'second-year/chapterfinal/parta', component: SecondYearChapterfinalParta }
 ];

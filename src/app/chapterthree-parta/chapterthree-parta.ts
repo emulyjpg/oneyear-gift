@@ -46,7 +46,7 @@ export class ChapterthreeParta {
           if (!this.hasConfirmedWin) {
             this.hasConfirmedWin = true;
           } else {
-            this.router.navigate(['chapterthree/partb']);
+            this.router.navigate(['first-year/chapterthree/partb']);
           }
         }
         return;
@@ -54,7 +54,7 @@ export class ChapterthreeParta {
 
 
     if (this.winMessage == "WIN!!" && event.key.toLowerCase() == "enter") {
-      this.router.navigate(['chapterthree/partb']);
+      this.router.navigate(['first-year/chapterthree/partb']);
       return;
     }
     if(this.winMessage == "Puttery Golf Time!") {

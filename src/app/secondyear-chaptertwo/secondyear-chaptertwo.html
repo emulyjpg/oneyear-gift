@@ -1,0 +1,19 @@
+<div class="instructions">Chapter 2: NIKI Concert</div>
+<!-- <div class="win">{{winMessage}}</div> -->
+<div class="message-bg">
+  <div class="layout-container">
+    <div class="message-chat">
+      <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'user' : 'robot'">
+        <span>{{ msg.text }}</span>
+      </div>
+      <div class="choices-row">
+        
+        Press enter to continue.
+      </div>
+    </div>
+    <video autoplay muted playsinline>
+  <source *ngIf="showPics" src="videos/nikivideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+  </div>
+</div>

@@ -61,7 +61,7 @@ messages = [
     else if(event.key == "Enter" && this.showPics) {
       this.handleChoice('next');
       console.log("Navigating to Chapter Three Part A");
-      this.router.navigate(['chapterthree/parta']);
+      this.router.navigate(['first-year/chapterthree/parta']);
     }
     // Add custom logic here based on the pressed key
     // For example, trigger a function or update a property

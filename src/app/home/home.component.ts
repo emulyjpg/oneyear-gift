@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class HomeComponent {
   showChapters = false;
+  activeYear = 'first-year';
+  selectedYearLabel = 'Our 1st Year';
   chapters = [
     { path: 'chapterone', label: 'Chapter 1' },
     // { path: 'chapterone/partb', label: 'Chapter One Part B' },
@@ -40,11 +42,18 @@ export class HomeComponent {
   constructor(private router: Router) {}
 
   goTo(route: string) {
-    this.router.navigate([route]);
+    const targetRoute = this.activeYear ? `${this.activeYear}/${route}` : route;
+    this.router.navigate([targetRoute]);
+  }
+
+  openYear(year: 'first-year' | 'second-year') {
+    this.activeYear = year;
+    this.selectedYearLabel = year === 'first-year' ? 'Our 1st Year' : 'Our 2nd Year';
+    this.showChapters = true;
   }
 
   showChapterSelect() {
-    this.showChapters = true;
+    this.openYear('first-year');
   }
 
   hideChapterSelect() {

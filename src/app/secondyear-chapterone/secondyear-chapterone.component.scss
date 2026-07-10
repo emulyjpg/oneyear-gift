@@ -1,0 +1,115 @@
+// .game-container {
+//   position: relative;
+//   width: 400px;
+//   height: 500px;
+//   border: 2px solid #ccc;
+//   margin: 0px auto 0px auto;
+//   background: #C0C0C0;
+//   .rocks {
+//     img {
+//         height: 40px;
+//     }
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center; /* centers each rock horizontally */;
+//   margin-bottom: 20px;
+// }
+
+// .rock-row {
+//   height: 10px;
+//   text-align: center;
+//   margin: 10px 0;
+//   &.left-left {
+//     margin-left: 10px;
+//     align-self: flex-start;
+//   }
+//   &.left-middle {
+//     margin-left: 100px;
+//     align-self: flex-start;
+//   }
+//    &.right-middle {
+//     margin-right: 100px;
+//     align-self: flex-end;
+//   }
+//   &.right-right {
+//     margin-right: 10px;
+//     align-self: flex-end;
+//   }
+// }
+
+    
+// }
+// .character {
+//   position: absolute;
+//   width: 40px;
+//   height: 40px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//     }
+// .instructions {
+//   text-align: center;
+//   margin-top: 8px;
+//   margin-bottom: 8px;
+// }
+// .win {
+//   text-align: center;
+//   margin-bottom: 8px;
+//   color: red;
+// }
+// .arrow-buttons {
+//   text-align: center;
+//   button {
+//     width: 100px;
+//     height: 50px;
+//   }
+// }
+
+
+.game-container {
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  border: 2px solid #ccc;
+  margin: 0px auto 0px auto;
+  background: #C0C0C0;
+}
+
+.ingredient {
+  font-size: 14px;
+  padding: 6px 8px;
+  background: #ffe9c4;
+  border-radius: 8px;
+  text-align: center;
+  cursor: grab;
+}
+
+.ingredient {
+  padding: 10px 14px;
+  background: #ffe9c4;
+  border-radius: 8px;
+  cursor: grab;
+  font-size: 20px;
+}
+
+.plate {
+  width: 300px;
+  min-height: 150px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f2f2f2;
+  border-radius: 12px;
+}
+
+.plate-item {
+  font-size: 20px;
+  margin: 6px 0;
+}
+
+.result {
+  margin-top: 20px;
+  background: #d4ffd4;
+  padding: 20px;
+  border-radius: 12px;
+}

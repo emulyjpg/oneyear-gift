@@ -63,7 +63,7 @@ onDrop(event: CdkDragDrop<any>) {
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterten/parta']);
+      this.router.navigate(['first-year/chapterten/parta']);
     }
   }
   @HostListener('document:mouseup', ['$event'])

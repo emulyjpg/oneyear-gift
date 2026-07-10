@@ -174,7 +174,7 @@ emilyImage = 'img/emilycheer.png';
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterone/partb']);
+      this.router.navigate(['first-year/chapterone/partb']);
     }
     else if(event.key == "Enter" && this.winMessage == "Oh no! You fell!") {
         this.move('reset');

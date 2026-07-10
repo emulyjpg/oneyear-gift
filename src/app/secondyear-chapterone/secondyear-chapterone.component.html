@@ -1,0 +1,40 @@
+<div class="instructions">Chapter 1: The Day That I Met You</div>
+<!-- <div class="instructions">Score: {{score}}</div> -->
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+
+  <h2>Uchi Houston</h2>
+  <p>Drag the dishes onto the plate.</p>
+
+  <div class="ingredients">
+    <div 
+      class="ingredient"
+      *ngFor="let ing of ingredients"
+      draggable="true"
+      (dragstart)="startDrag(ing)"
+    >
+      <img [src]="ing.icon" alt="{{ ing.name }}" class="ingredient-icon" />
+    <span class="name">{{ ing.name }}</span>
+    </div>
+  </div>
+
+  <div 
+    class="plate"
+    (drop)="dropIngredient()"
+    (dragover)="$event.preventDefault()"
+  >
+    <h3>Your Plate</h3>
+
+    <div class="plate-item" *ngFor="let p of plate">
+      <img [src]="p.icon" alt="{{ p.name }}" class="ingredient-icon" />
+      <span class="name">{{ p.name }}</span>
+    </div>
+  </div>
+
+  <div class="result" *ngIf="success">
+    <h3>🎉 You made the Trust Roll!</h3>
+    <p>This dish represents how we layered trust, comfort, and warmth this year.</p>
+    <button (click)="resetGame()">Play Again</button>
+  </div>
+
+</div>

@@ -1,12 +1,13 @@
-<div class="instructions">Our 1st Year</div>
+<div class="instructions">{{ selectedYearLabel }}</div>
 
 <div *ngIf="!showChapters" class="home-menu">
   <button class="home-menu" (click)="goTo('chapterone')">Start</button>
-  <button class="home-menu" (click)="showChapterSelect()">Chapter Select</button>
+  <button class="home-menu" (click)="showChapterSelect()">Our 1st Year</button>
+  <button class="home-menu" (click)="openYear('second-year')">Our 2nd Year</button>
 </div>
 
 <div *ngIf="showChapters" class="home-menu">
-  <p>Select a chapter to begin:</p>
+  <p>Select a chapter from {{ selectedYearLabel }}:</p>
   <button class="home-menu" *ngFor="let chapter of chapters" (click)="goTo(chapter.path)">
     {{ chapter.label }}
   </button>

@@ -34,7 +34,7 @@ emilyImage = 'img/emilycheer.png';
     console.log('Key pressed:', event.key);
     console.log(this.answer);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterfifteen/parta']);
+      this.router.navigate(['first-year/chapterfifteen/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');

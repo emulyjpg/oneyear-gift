@@ -36,7 +36,7 @@ export class ChapterfiveParta {
     else if (event.key === 'ArrowRight') dx = 1;
     else if(event.key == "Enter" && this.winMessage == "WIN!!")
     {
-      this.router.navigate(['chaptersix/parta']);
+      this.router.navigate(['first-year/chaptersix/parta']);
     }
     else return;
     const nx = this.player.x + dx;

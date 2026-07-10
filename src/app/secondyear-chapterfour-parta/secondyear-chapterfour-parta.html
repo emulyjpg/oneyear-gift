@@ -1,0 +1,16 @@
+<div class="instructions">Chapter 4: Texans Game</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" [src]="posImage" />
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!' && winMessage !== 'FULL WIN!!'" class="instructions">
+  "Go go go!"
+  <br>
+  <br>Use only up and down arrow keys to prep the flag.
+</div>
+<div class="instructions">
+<div *ngIf="winMessage == 'WIN!!' || winMessage == 'FULL WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+</div>

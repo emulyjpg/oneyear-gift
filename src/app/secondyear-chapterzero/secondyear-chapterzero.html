@@ -1,0 +1,10 @@
+<div class="message-bg">
+  <div class="message-chat">
+    <div *ngFor="let msg of messages" [ngClass]="msg.sender === 'user' ? 'user' : 'robot'">
+      <span>{{ msg.text }}</span>
+    </div>
+  </div>
+  <div class="choices-row">
+    <button (click)="handleChoice('next')">Next</button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+<div class="instructions">Chapter 1: The Day That I Met You</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" [src]="posImage" />
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!' && winMessage !== 'FULL WIN!!'" class="instructions">
+  Emily watched in admiration, seeing Alan's determination at the claw machines.
+  <br>He was focused, his eyes fixed on the prize.
+  <br>
+  <br>Use only left or right arrow keys to move the claw. Press enter to go.
+</div>
+<div class="instructions">
+<div *ngIf="winMessage == 'WIN!!' || winMessage == 'FULL WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!' && winMessage !== 'FULL WIN!!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div>
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

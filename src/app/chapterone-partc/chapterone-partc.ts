@@ -58,7 +58,7 @@ winTwo = false;
       this.winMessage = "FULL WIN!!";
     }
     else if(event.key == "Enter" && this.winMessage == "FULL WIN!!") {
-      this.router.navigate(['chaptertwo']);
+      this.router.navigate(['first-year/chaptertwo']);
     }
   }
 

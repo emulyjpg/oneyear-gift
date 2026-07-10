@@ -1,0 +1,29 @@
+<div class="instructions">Chapter 1: The Day That I Met You</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/hotpot.gif" />
+</div>
+
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+  "How many plates can we eat?" Emily asks.
+  <br>Alan smiles, "Let's see how many we can eat together!"
+  <br>
+  <br>Input in a number:
+</div>
+<div class="instructions">
+<input type="number"
+       [ngModel]="plateCount"
+       [disabled]="winMessage === 'WIN!!'"
+       (input)="onPlateCountChange($event)"
+       min="0"
+       max="999"
+/><br>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+  <img src="img/plate.png" alt="Plate" class="plate" *ngFor="let dummy of ' '.repeat(plateCount).split(''), let x = index" />
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

@@ -57,7 +57,7 @@ export class ChapterseventeenParta {
       this.submitGuess();
     }
     else if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['chapterfinal/parta']);
+      this.router.navigate(['first-year/chapterfinal/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
     //     this.move('left');

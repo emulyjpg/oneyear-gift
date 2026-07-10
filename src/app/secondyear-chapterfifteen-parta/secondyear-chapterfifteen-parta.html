@@ -1,0 +1,20 @@
+<div class="instructions">Chapter 15: Enhypen Concert</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <img class="game-container" src="img/enhypen.png" />
+</div>
+
+<div class="instructions">
+<input type="string"
+       [ngModel]="answer"
+       [disabled]="winMessage === 'WIN!!'"
+       (input)="onPlateCountChange($event)"
+/><br>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->
