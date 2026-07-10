@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/oneyear-gift',
+  basePath: 'https://emulyjpg.github.io/oneyear-gift',
   supportedLocales: {
   "en-US": ""
 },
