@@ -20,4 +20,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </div><!----><div _ngcontent-ng-c1359149318 class="instructions"><!----></div></app-secondyear-chapterthree-partb><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t26","8":"t28","9":"t29","11":"t30"},"c":{"5":[{"i":"t26","r":1,"t":{"1":"t27"},"c":{"1":[{"i":"t27","r":1,"x":16}]},"x":16}],"8":[{"i":"t28","r":1,"x":6}],"9":[{"i":"t29","r":1}],"11":[]}},{"c":{"0":[{"i":"c1359149318","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t70","8":"t72","9":"t73","11":"t74"},"c":{"5":[{"i":"t70","r":1,"t":{"1":"t71"},"c":{"1":[{"i":"t71","r":1,"x":16}]},"x":16}],"8":[{"i":"t72","r":1,"x":6}],"9":[{"i":"t73","r":1}],"11":[]}},{"c":{"0":[{"i":"c1359149318","r":1}]}}]}</script></body></html>`;

@@ -19,4 +19,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptertwo _nghost-ng-c758933549 ngh="0"><div _ngcontent-ng-c758933549 class="instructions">Chapter 2: Click Challenge</div><div _ngcontent-ng-c758933549 class="game-bg"><div _ngcontent-ng-c758933549 class="game-card"><div _ngcontent-ng-c758933549 class="counter">Clicks: 0 / 10</div><div _ngcontent-ng-c758933549 class="win-message">Keep clicking!</div><button _ngcontent-ng-c758933549 class="click-button" jsaction="click:;"> Click me! </button><!----></div></div></app-secondyear-chaptertwo><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"10":"t37"},"c":{"10":[]}},{"c":{"0":[{"i":"c758933549","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"10":"t61"},"c":{"10":[]}},{"c":{"0":[{"i":"c758933549","r":1}]}}]}</script></body></html>`;

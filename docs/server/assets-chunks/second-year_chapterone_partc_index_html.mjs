@@ -20,4 +20,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </div><!----><div _ngcontent-ng-c1167617713 class="instructions"><!----><div _ngcontent-ng-c1167617713 class="arrow-buttons"><br _ngcontent-ng-c1167617713><button _ngcontent-ng-c1167617713 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">&lt;</button><button _ngcontent-ng-c1167617713 aria-label="Right" jsaction="click:;">&gt;</button></div><!----></div></app-secondyear-chapterone-partc><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t17","8":"t18","9":"t19"},"c":{"6":[{"i":"t17","r":1}],"8":[],"9":[{"i":"t19","r":1}]}},{"c":{"0":[{"i":"c1167617713","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t33","8":"t34","9":"t35"},"c":{"6":[{"i":"t33","r":1}],"8":[],"9":[{"i":"t35","r":1}]}},{"c":{"0":[{"i":"c1167617713","r":1}]}}]}</script></body></html>`;

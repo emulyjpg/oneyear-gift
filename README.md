@@ -36,6 +36,21 @@ ng build
 
 This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
+## Deploying to GitHub Pages
+
+Run the GitHub Pages build from the project root, which is the folder containing `package.json` and `angular.json`:
+
+```powershell
+cd C:\Users\Public\repos\oneyear-app\oneyear-app
+npm run build:gh-pages
+```
+
+Do not run this command from the nested `oneyear-app` folder. The build prepares the `docs/` folder with the `/oneyear-gift/` base path and the root `index.html` required by GitHub Pages.
+
+The published site is available at:
+
+https://emulyjpg.github.io/oneyear-gift/
+
 ## Running unit tests
 
 To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:

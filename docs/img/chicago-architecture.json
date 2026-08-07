@@ -1,0 +1,5 @@
+[
+  { "name": "Willis Tower", "img": "assets/img/willis-tower.jpg" },
+  { "name": "John Hancock Center", "img": "assets/img/john-hancock.jpg" },
+  { "name": "Aqua Tower", "img": "assets/img/aqua-tower.jpg" }
+]

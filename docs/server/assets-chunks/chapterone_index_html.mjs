@@ -20,4 +20,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </div><!----><!----><!----></app-chapterone><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"34":"t6","35":"t7","36":"t8"},"c":{"34":[{"i":"t6","r":1}],"35":[],"36":[]}},{"c":{"0":[{"i":"c1563018999","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"34":"t32","35":"t33","36":"t34"},"c":{"34":[{"i":"t32","r":1}],"35":[],"36":[]}},{"c":{"0":[{"i":"c1563018999","r":1}]}}]}</script></body></html>`;

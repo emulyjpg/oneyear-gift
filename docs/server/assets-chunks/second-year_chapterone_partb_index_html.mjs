@@ -20,4 +20,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </div><!----><div _ngcontent-ng-c2543261641 class="instructions"><input _ngcontent-ng-c2543261641 type="number" min="0" max="999" value="0" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c2543261641><!----><!----></div></app-secondyear-chapterone-partb><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t29","10":"t30","11":"t31"},"c":{"6":[{"i":"t29","r":1}],"10":[],"11":[]}},{"c":{"0":[{"i":"c2543261641","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t66","10":"t67","11":"t68"},"c":{"6":[{"i":"t66","r":1}],"10":[],"11":[]}},{"c":{"0":[{"i":"c2543261641","r":1}]}}]}</script></body></html>`;
