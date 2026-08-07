@@ -2,7 +2,7 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>Our 1st Year</title>
-  <base href="/oneyear-app/">
+  <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
@@ -19,4 +19,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptersix-parta _nghost-ng-c2129167158 ngh="0"><div _ngcontent-ng-c2129167158 class="instructions">Chapter 6: A Christmas Surprise</div><div _ngcontent-ng-c2129167158 class="win">Loading...</div><div _ngcontent-ng-c2129167158 class="game-container"><!----></div><div _ngcontent-ng-c2129167158 class="instructions"><button _ngcontent-ng-c2129167158 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">Click to process the image!</button><!----><!----><!----></div></app-secondyear-chaptersix-parta><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t17","7":"t18","8":"t19","9":"t20"},"c":{"5":[],"7":[{"i":"t18","r":1}],"8":[],"9":[]}},{"c":{"0":[{"i":"c2129167158","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t31","7":"t32","8":"t33","9":"t34"},"c":{"5":[],"7":[{"i":"t32","r":1}],"8":[],"9":[]}},{"c":{"0":[{"i":"c2129167158","r":1}]}}]}</script></body></html>`;

@@ -2,7 +2,7 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>Our 1st Year</title>
-  <base href="/oneyear-app/">
+  <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
@@ -19,4 +19,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptertwo _nghost-ng-c758933549 ngh="0"><div _ngcontent-ng-c758933549 class="instructions">Chapter 2: Click Challenge</div><div _ngcontent-ng-c758933549 class="game-bg"><div _ngcontent-ng-c758933549 class="game-card"><div _ngcontent-ng-c758933549 class="counter">Clicks: 0 / 10</div><div _ngcontent-ng-c758933549 class="win-message">Keep clicking!</div><button _ngcontent-ng-c758933549 class="click-button" jsaction="click:;"> Click me! </button><!----></div></div></app-secondyear-chaptertwo><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"10":"t27"},"c":{"10":[]}},{"c":{"0":[{"i":"c758933549","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"10":"t37"},"c":{"10":[]}},{"c":{"0":[{"i":"c758933549","r":1}]}}]}</script></body></html>`;

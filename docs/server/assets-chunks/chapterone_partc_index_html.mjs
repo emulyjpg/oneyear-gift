@@ -2,7 +2,7 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>Our 1st Year</title>
-  <base href="/oneyear-app/">
+  <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
   <style>@font-face{font-family:'Material Icons';font-style:normal;font-weight:400;src:url(https://fonts.gstatic.com/s/materialicons/v145/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');}.material-icons{font-family:'Material Icons';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased;}</style>
@@ -20,4 +20,4 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </div><!----><div _ngcontent-ng-c3819605741 class="instructions"><!----><div _ngcontent-ng-c3819605741 class="arrow-buttons"><br _ngcontent-ng-c3819605741><button _ngcontent-ng-c3819605741 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">&lt;</button><button _ngcontent-ng-c3819605741 aria-label="Right" jsaction="click:;">&gt;</button></div><!----></div></app-chapterone-partc><!----></app-root>
 <script src="main-FWZ6KA65.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t12","8":"t13","9":"t14"},"c":{"6":[{"i":"t12","r":1}],"8":[],"9":[{"i":"t14","r":1}]}},{"c":{"0":[{"i":"c3819605741","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t22","8":"t23","9":"t24"},"c":{"6":[{"i":"t22","r":1}],"8":[],"9":[{"i":"t24","r":1}]}},{"c":{"0":[{"i":"c3819605741","r":1}]}}]}</script></body></html>`;
