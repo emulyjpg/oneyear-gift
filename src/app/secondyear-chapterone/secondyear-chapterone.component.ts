@@ -24,7 +24,7 @@ constructor(private router: Router) {}
   readonly charSize = 40;
   rockCount = 0;
   score = 0;
-  winMessage = "send it!";
+  winMessage = "Happy Anniversary!";
   readonly leftLeftPos = 0;
   readonly leftMiddlePos = 140;
   readonly rightMiddlePos = 260;
@@ -38,14 +38,29 @@ emilyImage = 'img/emilycheer.png';
     { id: 3, name: 'Tuna', icon: 'img/tuna.png' },
     { id: 4, name: 'Yellowtail', icon: 'img/yellowtail.png' },
     { id: 5, name: 'Amberjack', icon: 'img/amberjack.png' },
-    { id: 6, name: 'Yellowtail', icon: 'img/yellowtail.png' },
-    { id: 7, name: 'Scallop', icon: 'img/scallop.png' }
+    { id: 6, name: 'Scallop', icon: 'img/scallop.png' }
   ];
 
   plate: Ingredient[] = [];
 
   dragging: Ingredient | null = null;
   success = false;
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    console.log('Key pressed:', event.key);
+    if(event.key == "Enter" && this.winMessage == "WIN!!") {
+      this.router.navigate(['second-year/chaptertwo']);
+    }
+    // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
+    //     this.move('left');
+    // }
+    // else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
+    //     this.move('right');
+    //}
+    // Add custom logic here based on the pressed key
+    // For example, trigger a function or update a property
+  }
 
   startDrag(ingredient: Ingredient) {
     this.dragging = ingredient;
@@ -60,13 +75,17 @@ emilyImage = 'img/emilycheer.png';
   }
 
   checkOrder() {
-   if (this.plate.length === this.ingredients.length) {
-    this.success = true;
-  }
+    const hasAllIngredients = this.ingredients.every((ingredient) =>
+      this.plate.some((item) => item.id === ingredient.id)
+    );
+
+    this.success = this.plate.length >= this.ingredients.length && hasAllIngredients;
+    this.winMessage = this.success ? 'WIN!!' : 'Happy Anniversary!';
   }
 
   resetGame() {
     this.plate = [];
     this.success = false;
+    this.winMessage = 'Happy Anniversary!';
   }
 }

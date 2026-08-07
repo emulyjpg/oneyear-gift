@@ -1,4 +1,4 @@
-<div class="instructions">Chapter 1: The Day That I Met You</div>
+<div class="instructions">Chapter 1: Uchi Houston</div>
 <!-- <div class="instructions">Score: {{score}}</div> -->
 <div class="win">{{winMessage}}</div>
 <div class="game-container">
@@ -32,9 +32,12 @@
   </div>
 
   <div class="result" *ngIf="success">
-    <h3>🎉 You made the Trust Roll!</h3>
-    <p>This dish represents how we layered trust, comfort, and warmth this year.</p>
+    <h3>Big Back Behavior!</h3>
+    <p>You have completed the Uchi course.</p>
     <button (click)="resetGame()">Play Again</button>
   </div>
+  <div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
 
 </div>

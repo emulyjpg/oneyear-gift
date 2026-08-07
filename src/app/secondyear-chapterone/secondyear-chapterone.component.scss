@@ -83,6 +83,9 @@
   border-radius: 8px;
   text-align: center;
   cursor: grab;
+  .ingredient-icon {
+    height: 40px;
+  }
 }
 
 .ingredient {
@@ -105,6 +108,9 @@
 .plate-item {
   font-size: 20px;
   margin: 6px 0;
+  .ingredient-icon {
+    height: 40px;
+  }
 }
 
 .result {
