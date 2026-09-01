@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterthree-partc _nghost-ng-c180868666 ngh="0"><div _ngcontent-ng-c180868666 class="instructions">Chapter 3: Day 1</div><div _ngcontent-ng-c180868666 class="win">"Will you be my girlfriend?"</div><div _ngcontent-ng-c180868666 class="game-container"><img _ngcontent-ng-c180868666 src="img/day1gif.gif" class="game-container"></div><div _ngcontent-ng-c180868666 class="instructions"> "Will you be my girlfriend?" Alan asks. <br _ngcontent-ng-c180868666>How does Emily respond?
 </div><!----><div _ngcontent-ng-c180868666 class="instructions"><input _ngcontent-ng-c180868666 type="text" value class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c180868666><!----></div></app-chapterthree-partc><!----></app-root>
-<script src="main-FWZ6KA65.js" type="module"></script>
+<script src="main-VRALACJM.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t2","10":"t3"},"c":{"6":[{"i":"t2","r":1}],"10":[]}},{"c":{"0":[{"i":"c180868666","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t16","10":"t17"},"c":{"6":[{"i":"t16","r":1}],"10":[]}},{"c":{"0":[{"i":"c180868666","r":1}]}}]}</script></body></html>`;

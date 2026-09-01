@@ -12,69 +12,54 @@ import { FormsModule } from '@angular/forms';
 })
 export class SecondYearChapterfourParta {
 constructor(private router: Router) {}
-   pos = 0;
+  pos = { x: 50, y: 240 };
   readonly step = 20;
   readonly boxSize = 400;
   readonly charSize = 40;
-  rockCount = 0;
+  walkCount = 0;
   score = 0;
-  winMessage = "Open that flag!";
-posImage = 'img/flagpos0.png';
-winOriginal = false;
-winOne = false;
-winTwo = false;
+  winMessage = "How beautiful!";
+  readonly leftLeftPos = 0;
+  readonly leftMiddlePos = 140;
+  readonly rightMiddlePos = 260;
+  readonly rightRightPos = 310;
+characterImage = 'img/rencouple.png';
 
-  plateCount: number = 0; // Default value
-  
+move(direction?: any) {
+    console.log(direction);
+    
+    if(this.walkCount < 18 && direction === "right"  && this.winMessage !== "WIN!!")
+    {
+      this.pos.x+=20;
+      this.walkCount++;
+      console.log(this.walkCount);
+      if(this.walkCount == 18)
+      {
+        this.winMessage = "WIN!!";
+      }
+    }
+    else if(this.walkCount > 0 && direction === "left" && this.winMessage !== "WIN!!")
+    {
+      this.pos.x-=20;
+      this.walkCount--;
+      console.log(this.walkCount);
+    }
+    
+  }
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
-    
-    if((event.key == "ArrowUp" || event.key == "w") && this.winMessage !== "WIN!!") {
-        this.move('up');
-    }
-    else if((event.key == "ArrowDown" || event.key == "s") && this.winMessage !== "WIN!!") {
-        this.move('down');
-    }
-    // else if(event.key == "Enter" && this.winMessage != "WIN!!" && this.winMessage != "FULL WIN!!") {
-    //   console.log("Time to GRAB!");
-    //   this.submit();
-    // }
-    else if(event.key == "Enter" && this.winMessage == "WIN!!")
-    {
+    if(event.key == "Enter" && this.winMessage == "WIN!!") {
       this.router.navigate(['second-year/chapterfive/parta']);
     }
-  }
-
-  move(direction?: any) {
-    console.log(direction);
-
-    // Update position
-    if (direction === "up" && this.pos < 12) {
-      this.pos += 1;
-    } else if (direction === "down" && this.pos > 0) {
-      this.pos -= 1;
-    } else {
-      console.log(`Unhandled direction: ${direction}`);
-      return;
+    else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
+        this.move('left');
     }
-
-    // Set PNG image
-    this.posImage = this.getImagePath(this.pos, ".png");
-    console.log(this.posImage);
-
-    if (this.pos == 12) {
-      this.winMessage = "WIN!!";
-      this.winOriginal = true;
+    else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
+        this.move('right');
     }
-   
+    // Add custom logic here based on the pressed key
+    // For example, trigger a function or update a property
   }
-
-
-
-  getImagePath(pos: number, variant: string = "", extension: string = ".png"): string {
-  const prefix = pos < 0 ? `flagpos${pos}` : `flagpos${pos}`;
-  return `img/${prefix}${extension}`;
-}
 }

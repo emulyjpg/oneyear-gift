@@ -1,0 +1,45 @@
+
+<div class="instructions">Chapter 3: Wanted Posters at Spooky Spirits</div>
+<div class="win">{{winMessage}}</div>
+ <div class="columns">
+
+    <!-- LEFT COLUMN: STARTS -->
+    <div class="column">
+      <h3>Person</h3>
+      <div
+        class="item"
+        *ngFor="let s of starts"
+        [class.selected]="selectedStart?.id === s.id"
+        [class.matched]="matchedIds.includes(s.id)"
+        [class.wrong]="wrongFlash && selectedStart?.id === s.id"
+        (click)="selectStart(s)"
+      >
+        {{ s.start }}
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN: ENDS -->
+    <div class="column">
+      <h3>Last Seen</h3>
+      <div
+        class="item"
+        *ngFor="let e of ends"
+        [class.selected]="selectedEnd?.id === e.id"
+        [class.matched]="matchedIds.includes(e.id)"
+        [class.wrong]="wrongFlash && selectedEnd?.id === e.id"
+        (click)="selectEnd(e)"
+      >
+        {{ e.end }}
+      </div>
+    </div>
+
+  </div>
+<div class="instructions">
+  <div *ngIf="winMessage === 'WIN!!'" class="instructions">
+    Press enter to continue.
+  </div>
+</div>
+
+
+
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

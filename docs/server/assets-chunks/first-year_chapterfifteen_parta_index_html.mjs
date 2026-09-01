@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterfifteen-parta _nghost-ng-c881351282 ngh="0"><div _ngcontent-ng-c881351282 class="instructions">Chapter 15: Enhypen Concert</div><div _ngcontent-ng-c881351282 class="win">What song was Emily most excited for?</div><div _ngcontent-ng-c881351282 class="game-container"><img _ngcontent-ng-c881351282 src="img/enhypen.png" class="game-container"></div><div _ngcontent-ng-c881351282 class="instructions"><input _ngcontent-ng-c881351282 type="string" value class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c881351282><!----></div></app-chapterfifteen-parta><!----></app-root>
-<script src="main-FWZ6KA65.js" type="module"></script>
+<script src="main-VRALACJM.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"9":"t21"},"c":{"9":[]}},{"c":{"0":[{"i":"c881351282","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"9":"t19"},"c":{"9":[]}},{"c":{"0":[{"i":"c881351282","r":1}]}}]}</script></body></html>`;

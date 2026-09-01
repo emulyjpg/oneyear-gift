@@ -1,0 +1,60 @@
+
+.instructions {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.win {
+  text-align: center;
+  margin-bottom: 8px;
+  color: red;
+}
+.game-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.column {
+  width: 40%;
+}
+
+.item {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f7f7f7;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.item:hover {
+  background: #e6e6e6;
+}
+
+.selected {
+  background: #d0e8ff;
+}
+
+.matched {
+  background: #c8ffc8 !important;
+  text-decoration: line-through;
+}
+
+.wrong {
+  background: #ffb3b3 !important;
+  transform: scale(1.03);
+}
+
+.result {
+  margin-top: 20px;
+  background: #d4ffd4;
+  padding: 20px;
+  border-radius: 12px;
+}

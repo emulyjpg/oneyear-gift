@@ -18,6 +18,6 @@ export default `<!doctype html>
   <button><a href="/">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root></app-root>
-<script src="main-FWZ6KA65.js" type="module"></script></body>
+<script src="main-VRALACJM.js" type="module"></script></body>
 </html>
 `;

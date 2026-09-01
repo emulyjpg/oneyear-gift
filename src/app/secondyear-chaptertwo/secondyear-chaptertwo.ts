@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-secondyear-chaptertwo',
@@ -8,10 +9,19 @@ import { CommonModule } from '@angular/common';
   styleUrl: './secondyear-chaptertwo.scss'
 })
 export class SecondYearChaptertwo {
+  constructor(private router: Router) {}
+
   readonly targetClicks = 10;
   count = 0;
-  winMessage = 'Keep clicking!';
+  winMessage = 'Keep feeding!';
   isWon = false;
+
+  @HostListener('document:keydown', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    if (event.key === 'Enter' && this.winMessage === 'WIN!!') {
+      this.router.navigate(['second-year/chapterfour']);
+    }
+  }
 
   handleClick() {
     if (this.isWon) {
@@ -24,13 +34,13 @@ export class SecondYearChaptertwo {
       this.isWon = true;
       this.winMessage = 'WIN!!';
     } else {
-      this.winMessage = `Keep going! ${this.targetClicks - this.count} more click${this.targetClicks - this.count === 1 ? '' : 's'} to win.`;
+      this.winMessage = `Keep feeding!`;
     }
   }
 
   resetGame() {
     this.count = 0;
-    this.winMessage = 'Keep clicking!';
+    this.winMessage = 'Keep feeding!';
     this.isWon = false;
   }
 }

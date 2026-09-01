@@ -1,10 +1,14 @@
-<div class="instructions">Chapter 2: Click Challenge</div>
+<div class="instructions">Chapter 2: Feed Miso Churu</div>
 
 <div class="game-bg">
   <div class="game-card">
     <div class="counter">Clicks: {{ count }} / {{ targetClicks }}</div>
     <div class="win-message">{{ winMessage }}</div>
-
+    <img
+      [src]="count % 2 === 0 ? 'img/miso-1.png' : 'img/miso-2.png'"
+      style="width:100px"
+      alt="miso"
+    />
     <button class="click-button" (click)="handleClick()" [disabled]="isWon">
       Click me!
     </button>

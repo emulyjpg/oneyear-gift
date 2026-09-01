@@ -27,9 +27,7 @@ import { SecondYearChapterOne } from './secondyear-chapterone/secondyear-chapter
 import { SecondYearChapteronePartb } from './secondyear-chapterone-partb/secondyear-chapterone-partb';
 import { SecondYearChapteronePartc } from './secondyear-chapterone-partc/secondyear-chapterone-partc';
 import { SecondYearChaptertwo } from './secondyear-chaptertwo/secondyear-chaptertwo';
-import { SecondYearChapterthreeParta } from './secondyear-chapterthree-parta/secondyear-chapterthree-parta';
-import { SecondYearChapterthreePartb } from './secondyear-chapterthree-partb/secondyear-chapterthree-partb';
-import { SecondYearChapterthreePartc } from './secondyear-chapterthree-partc/secondyear-chapterthree-partc';
+import { SecondYearChapterthree } from './secondyear-chapterthree/secondyear-chapterthree';
 import { SecondYearChapterfourParta } from './secondyear-chapterfour-parta/secondyear-chapterfour-parta';
 import { SecondYearChapterfiveParta } from './secondyear-chapterfive-parta/secondyear-chapterfive-parta';
 import { SecondYearChaptersixParta } from './secondyear-chaptersix-parta/secondyear-chaptersix-parta';
@@ -97,9 +95,7 @@ export const routes: Routes = [
   ,{ path: 'second-year/chapterone/partb', component: SecondYearChapteronePartb }
   ,{ path: 'second-year/chapterone/partc', component: SecondYearChapteronePartc }
   ,{ path: 'second-year/chaptertwo', component: SecondYearChaptertwo }
-  ,{ path: 'second-year/chapterthree/parta', component: SecondYearChapterthreeParta }
-  ,{ path: 'second-year/chapterthree/partb', component: SecondYearChapterthreePartb }
-  ,{ path: 'second-year/chapterthree/partc', component: SecondYearChapterthreePartc }
+  ,{ path: 'second-year/chapterthree', component: SecondYearChapterthree }
   ,{ path: 'second-year/chapterfour/parta', component: SecondYearChapterfourParta }
   ,{ path: 'second-year/chapterfive/parta', component: SecondYearChapterfiveParta }
   ,{ path: 'second-year/chaptersix/parta', component: SecondYearChaptersixParta }

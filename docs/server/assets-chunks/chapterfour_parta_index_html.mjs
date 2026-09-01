@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterfour-parta _nghost-ng-c1018886857 ngh="0"><div _ngcontent-ng-c1018886857 class="instructions">Chapter 4: Texans Game</div><div _ngcontent-ng-c1018886857 class="win">Open that flag!</div><div _ngcontent-ng-c1018886857 class="game-container"><img _ngcontent-ng-c1018886857 class="game-container" src="img/flagpos0.png"></div><div _ngcontent-ng-c1018886857 class="instructions"> "Go go go!" <br _ngcontent-ng-c1018886857><br _ngcontent-ng-c1018886857>Use only up and down arrow keys to prep the flag.
 </div><!----><div _ngcontent-ng-c1018886857 class="instructions"><!----></div></app-chapterfour-parta><!----></app-root>
-<script src="main-FWZ6KA65.js" type="module"></script>
+<script src="main-VRALACJM.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t47","8":"t48"},"c":{"6":[{"i":"t47","r":1}],"8":[]}},{"c":{"0":[{"i":"c1018886857","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t27","8":"t28"},"c":{"6":[{"i":"t27","r":1}],"8":[]}},{"c":{"0":[{"i":"c1018886857","r":1}]}}]}</script></body></html>`;
