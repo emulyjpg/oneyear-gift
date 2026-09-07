@@ -16,12 +16,38 @@ constructor(private router: Router) {}
   readonly step = 20;
   readonly boxSize = 400;
   readonly charSize = 40;
-  loadCount = 36;
+  rockCount = 0;
   score = 0;
-  winMessage = "Finish the pounds...";
+  winMessage = "";
+  readonly leftLeftPos = 0;
+  readonly leftMiddlePos = 140;
+  readonly rightMiddlePos = 260;
+  readonly rightRightPos = 310;
+characterImage = 'img/8bitfriendOG.png';
+emilyImage = 'img/emilycheer.png';
 
-  plateCount: number = 0; // Default value
-  
+  nameInput = ""; // Default value
+  nameArray: string[] = [];
+  answerArray: string[] = [
+    "teddy"
+    ,"thien" //won't accept charlie lol
+    ,"kasey"
+    ,"michael"
+    ,"jeannette"
+    ,"syed"
+    ,"kevin"
+    ,"alice"
+    ,"fariha"
+    ,"roan"
+    ,"aaron"
+    ,"alan"
+    ,"emily"
+    ,"brandon"
+    ,"taliz"
+    ,"matt"
+    ,"christian"
+    ,"iendi"
+    ,"mohammad"];
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
@@ -39,18 +65,18 @@ constructor(private router: Router) {}
     // For example, trigger a function or update a property
   }
 
-
-
-  loading()
-  {
-    if(this.loadCount > 0)
+  onPlateCountChange(event: any) {
+    const value = event.target.value;
+    console.log(value);
+    if(this.answerArray.includes(value.toLowerCase()) && !this.nameArray.includes(value))
     {
-      this.loadCount--;
+      //the date we first met
+      this.nameArray.push(value.toLowerCase());
+      this.nameInput = ''; //clear input field
+      //this.winMessage = "WIN!!";
     }
-    console.log(this.loadCount);
-    if(this.loadCount == 0)
+    if(this.nameArray.length == 19) //complete
     {
-      console.log("WIN!!");
       this.winMessage = "WIN!!";
     }
   }

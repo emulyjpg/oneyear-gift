@@ -19,7 +19,7 @@ export class HomeComponent {
     // { path: 'chapterone/partb', label: 'Chapter One Part B' },
     // { path: 'chapterone/partc', label: 'Chapter One Part C' },
     { path: 'chaptertwo', label: 'Chapter 2' },
-    { path: 'chapterthree/parta', label: 'Chapter 3' },
+    { path: 'chapterthree', label: 'Chapter 3' },
     // { path: 'chapterthree/partb', label: 'Chapter Three Part B' },
     // { path: 'chapterthree/partc', label: 'Chapter Three Part C' },
     { path: 'chapterfour/parta', label: 'Chapter 4' },

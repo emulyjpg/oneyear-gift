@@ -1,4 +1,4 @@
-<div class="instructions">Chapter 5: Space Explorers: The Infinite</div>
+<div class="instructions">Chapter 5: A Charlie Brown Christmas Run</div>
 <div class="win" *ngIf="winMessage">{{winMessage}}</div>
 <div class="instructions">
 <div class="maze-container" style="align-items: center">
@@ -10,14 +10,17 @@
            'goal': cell === 'G',
            'player': player.x === x && player.y === y
          }">
-      <span *ngIf="player.x === x && player.y === y">•</span>
-      <span *ngIf="cell === 'G' && !(player.x === x && player.y === y)">🚀</span>
+       <img *ngIf="player.x === x && player.y === y"
+         src="img/charliebrown.png"
+         alt="Space explorer"
+         style="width: 100%; height: 100%; object-fit: contain; display: block;">
+      <span *ngIf="cell === 'G' && !(player.x === x && player.y === y)">🏁</span>
     </div>
   </div>
 </div>
 </div>
 <div class="instructions" *ngIf="!winMessage">
-  Use arrow keys to move the dot through the VR space!
+  Use arrow keys to finish the 5k!
 </div>
 <div *ngIf="winMessage == 'WIN!!' || winMessage == 'FULL WIN!!'" class="instructions">
   Press enter to continue.

@@ -1,14 +1,29 @@
-<div class="instructions">Chapter 7: Crawfish Season</div>
+<div class="instructions">Chapter 7: Happy Birthday, Alan!</div>
+<div class="instructions">List all 19 people that came to Sushi Masa.</div>
 <div class="win">{{winMessage}}</div>
 <div class="game-container">
-    <img src="img/crawfish.png" alt="Plate" class="plate" *ngFor="let dummy of ' '.repeat(loadCount).split(''), let x = index" />
+    <!-- <img class="game-container" src="img/museum.png" /> -->
+    <img [src]="'img/' + name + '-7.png'" alt="Plate" class="plate" *ngFor="let name of nameArray" />
+  
 </div>
 
 
-<div class="instructions">
-    <br>
-    <button aria-label="Left" (click)="loading()" *ngIf="winMessage != 'WIN!!'" style="margin-right:8px;">Click to eat the crawfish!</button>
-    <div *ngIf="winMessage == 'WIN!!'" class="instructions">
-    Press enter to continue.
-    </div>
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+    <input type="string"
+        [(ngModel)]="nameInput"
+        [disabled]="winMessage === 'WIN!!'"
+        (input)="onPlateCountChange($event)"
+    /><br>
 </div>
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions">
+    Press enter to try again.
+</div>
+<div *ngIf="winMessage == 'WIN!!'" class="instructions">
+  Press enter to continue.
+</div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

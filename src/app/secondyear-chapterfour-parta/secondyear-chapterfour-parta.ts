@@ -12,7 +12,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class SecondYearChapterfourParta {
 constructor(private router: Router) {}
-  pos = { x: 50, y: 240 };
+  pos = { x: 50, y: 200 };
   readonly step = 20;
   readonly boxSize = 400;
   readonly charSize = 40;

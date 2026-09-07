@@ -19,7 +19,7 @@ export class SecondYearChaptersixParta {
   readonly charSize = 40;
   loadCount = 0;
   score = 0;
-  winMessage = "Loading...";
+  winMessage = "Mot..";
 
   plateCount: number = 0; // Default value
   
@@ -27,7 +27,7 @@ export class SecondYearChaptersixParta {
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
-    if(event.key == "Enter" && this.winMessage == "WIN!!") {
+    if(event.key == "Enter" && this.winMessage == "DZO!!") {
       this.router.navigate(['second-year/chapterseven/parta']);
     }
     // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
@@ -49,19 +49,19 @@ export class SecondYearChaptersixParta {
     if(this.loadCount >= 8)
     {
       console.log("WIN!!");
-      this.winMessage = "WIN!!";
+      this.winMessage = "DZO!!";
     }
     else if(this.loadCount >= 6)
     {
-      this.winMessage = "Almost!!";
+      this.winMessage = "Ba..";
     }
     else if(this.loadCount >= 4)
     {
-      this.winMessage = "Still loading..";
+      this.winMessage = "Hai..";
     }
     else if(this.loadCount >= 2)
     {
-      this.winMessage = "Loading..";
+      this.winMessage = "Mot..";
     }
   }
 }
