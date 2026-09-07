@@ -15,49 +15,34 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 })
 export class SecondYearChapternineParta {
 constructor(private router: Router) {}
- @ViewChild('dropZoneRef') dropZoneRef!: ElementRef;
-toppings = [
-    { name: 'Calcifer', icon: 'img/charm1.png' },
-    { name: 'Kodama', icon: 'img/charm2.png' },
-    { name: 'No Face', icon: 'img/charm3.png' },
-    { name: 'Princess Mononoke', icon: 'img/charm4.png' },
-    { name: 'Gigi', icon: 'img/charm5.png' },
-    { name: 'Kiki', icon: 'img/charm6.png' },
-    { name: 'Catbus', icon: 'img/charm7.png' },
-    { name: 'Soot Sprite', icon: 'img/charm8.png' },
-    { name: 'Totoro', icon: 'img/charm9.png' },
-    { name: 'Chutotoro', icon: 'img/charm10.png' },
-  ];
-  winMessage = "Decorate the crocs!";
-  initialY = 0;
-  initialX = 0;
-  droppedY = 0;
-  droppedX = 0;
-  charmCount = 0;
+  pos = { x: 180, y: 400 };
+  readonly step = 20;
+  readonly boxSize = 400;
+  readonly charSize = 40;
+  rockCount = 0;
+  score = 0;
+  winMessage = "";
+  readonly leftLeftPos = 0;
+  readonly leftMiddlePos = 140;
+  readonly rightMiddlePos = 260;
+  readonly rightRightPos = 310;
+characterImage = 'img/8bitfriendOG.png';
+emilyImage = 'img/emilycheer.png';
 
-  droppedToppings: any[] = [];
-
- 
-
-onDrop(event: CdkDragDrop<any>) {
-  const topping = event.item.data;
-  const mouseEvent = event.event as MouseEvent;
-
-  const dropZoneRect = this.dropZoneRef.nativeElement.getBoundingClientRect();
-  const relativeX = mouseEvent.clientX - dropZoneRect.left;
-  const relativeY = mouseEvent.clientY - dropZoneRect.top;
-
-  this.droppedToppings.push({
-    ...topping,
-    x: relativeX,
-    y: relativeY
-  });
-
-
-}
-
-
-
+  nameInput = ""; // Default value
+  nameArray: string[] = [];
+  answerArray: string[] = [
+    "emo"
+    ,"emt" //won't accept charlie lol
+    ,"egg"
+    ,"explorer"
+    ,"experiment 626"
+    ,"emily"
+    ,"emily in paris"
+    ,"elephant"
+    ,"eevee"
+    ,"engineer"
+    ,"esnupi"];
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
@@ -65,17 +50,30 @@ onDrop(event: CdkDragDrop<any>) {
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
       this.router.navigate(['second-year/chapterten/parta']);
     }
+    // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
+    //     this.move('left');
+    // }
+    // else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
+    //     this.move('right');
+    //}
+    // Add custom logic here based on the pressed key
+    // For example, trigger a function or update a property
   }
-  @HostListener('document:mouseup', ['$event'])
-  onMouseUp(event: MouseEvent) {
-    if(this.charmCount < 10) {
-      this.charmCount++;
-    }
-    console.log(this.charmCount);
-    if(this.charmCount >= 10)
+
+  onPlateCountChange(event: any) {
+    const value = event.target.value;
+    console.log(value);
+    if(this.answerArray.includes(value.toLowerCase()) && !this.nameArray.includes(value))
     {
-      this.winMessage = "WIN!!"
-    }  
+      //the date we first met
+      this.nameArray.push(value.toLowerCase());
+      this.nameInput = ''; //clear input field
+      //this.winMessage = "WIN!!";
+    }
+    if(this.nameArray.length == 11) //complete
+    {
+      this.winMessage = "WIN!!";
+    }
   }
 
 }

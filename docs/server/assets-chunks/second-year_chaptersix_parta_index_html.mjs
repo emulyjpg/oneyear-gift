@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptersix-parta _nghost-ng-c695319479 ngh="0"><div _ngcontent-ng-c695319479 class="instructions">Chapter 6: James &amp; Jessica's Wedding</div><div _ngcontent-ng-c695319479 class="game-container"><img _ngcontent-ng-c695319479 src="img/weddingcheers.png" class="game-container"><!----><!----></div><div _ngcontent-ng-c695319479 class="instructions"><div _ngcontent-ng-c695319479 class="win">Mot..</div><button _ngcontent-ng-c695319479 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">Click to power up!</button><!----><!----><!----></div></app-secondyear-chaptersix-parta><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"3":"t37","4":"t38","8":"t39","9":"t40","10":"t41"},"c":{"3":[{"i":"t37","r":1}],"4":[],"8":[{"i":"t39","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c695319479","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"3":"t53","4":"t54","8":"t55","9":"t56","10":"t57"},"c":{"3":[{"i":"t53","r":1}],"4":[],"8":[{"i":"t55","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c695319479","r":1}]}}]}</script></body></html>`;

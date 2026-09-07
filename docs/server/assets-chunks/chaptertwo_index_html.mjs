@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chaptertwo _nghost-ng-c2579777831 ngh="0"><div _ngcontent-ng-c2579777831 class="instructions">Chapter 2: NIKI Concert</div><div _ngcontent-ng-c2579777831 class="message-bg"><div _ngcontent-ng-c2579777831 class="layout-container"><div _ngcontent-ng-c2579777831 class="message-chat"><div _ngcontent-ng-c2579777831 class="robot"><span _ngcontent-ng-c2579777831>Just got home, thank you for today!</span></div><!----><div _ngcontent-ng-c2579777831 class="choices-row"> Press enter to continue. </div></div><video _ngcontent-ng-c2579777831 autoplay muted playsinline><!----> Your browser does not support the video tag.
 </video></div></div></app-chaptertwo><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t0","9":"t1"},"c":{"5":[{"i":"t0","r":1}],"9":[]}},{"c":{"0":[{"i":"c2579777831","r":1}]}}]}</script></body></html>`;

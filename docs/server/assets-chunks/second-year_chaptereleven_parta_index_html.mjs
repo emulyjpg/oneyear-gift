@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptereleven-parta _nghost-ng-c1637598723 ngh="0"><div _ngcontent-ng-c1637598723 class="instructions">Chapter 11: Happy Birthday, Emily!</div><div _ngcontent-ng-c1637598723 class="instructions">List all 20 friends that were in the group photo at the party!</div><div _ngcontent-ng-c1637598723 class="win"><!--ngetn--></div><div _ngcontent-ng-c1637598723 class="game-container"><!----></div><div _ngcontent-ng-c1637598723 class="instructions"><input _ngcontent-ng-c1637598723 type="string" value class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c1637598723></div><!----><!----><!----></app-secondyear-chaptereleven-parta><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"7":"t17","8":"t18","9":"t19","10":"t20"},"c":{"7":[],"8":[{"i":"t18","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c1637598723","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"7":"t31","8":"t32","9":"t33","10":"t34"},"c":{"7":[],"8":[{"i":"t32","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c1637598723","r":1}]}}]}</script></body></html>`;

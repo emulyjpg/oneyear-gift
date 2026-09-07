@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chaptersixteen-parta _nghost-ng-c499025839 ngh="0"><div _ngcontent-ng-c499025839 class="instructions">Chapter 16: K-Pop Night</div><div _ngcontent-ng-c499025839 class="win">Dance!</div><div _ngcontent-ng-c499025839 class="game-container"><img _ngcontent-ng-c499025839 class="game-container" src="img/kpopnight.png"></div><div _ngcontent-ng-c499025839 class="instructions"> Complete the lyrics (no spaces): "I was really hoping that..."
 </div><!----><div _ngcontent-ng-c499025839 class="instructions"><!----></div><!----><!----></app-chaptersixteen-parta><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t27","8":"t28","9":"t29","10":"t30"},"c":{"6":[{"i":"t27","r":1}],"8":[],"9":[],"10":[]}},{"c":{"0":[{"i":"c499025839","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t36","8":"t37","9":"t38","10":"t39"},"c":{"6":[{"i":"t36","r":1}],"8":[],"9":[],"10":[]}},{"c":{"0":[{"i":"c499025839","r":1}]}}]}</script></body></html>`;

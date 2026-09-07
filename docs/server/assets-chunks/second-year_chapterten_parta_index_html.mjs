@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chapterten-parta _nghost-ng-c1718244879 ngh="0"><div _ngcontent-ng-c1718244879 class="instructions">Chapter 10: Museum of Fine Arts</div><div _ngcontent-ng-c1718244879 class="win">How beautiful!</div><div _ngcontent-ng-c1718244879 class="game-container"><img _ngcontent-ng-c1718244879 src="img/museum.png" class="game-container"><div _ngcontent-ng-c1718244879 class="character" style="left: 50px; top: 240px;"><img _ngcontent-ng-c1718244879 alt="Character" style="width: 150px;" src="img/museumcouple.png"></div></div><div _ngcontent-ng-c1718244879 class="instructions"> Use only left or right arrow keys to move the characters.
 </div><!----><!----><!----></app-secondyear-chapterten-parta><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"8":"t39","9":"t40","10":"t41"},"c":{"8":[{"i":"t39","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c1718244879","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"8":"t47","9":"t48","10":"t49"},"c":{"8":[{"i":"t47","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c1718244879","r":1}]}}]}</script></body></html>`;

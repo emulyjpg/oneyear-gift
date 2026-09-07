@@ -19,6 +19,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptertwelve-parta _nghost-ng-c1280239522 ngh="0"><div _ngcontent-ng-c1280239522 class="instructions">Chapter 12: Fireworks Show for Independence Day</div><div _ngcontent-ng-c1280239522 class="win">WIN!!</div><div _ngcontent-ng-c1280239522 class="game-container"><img _ngcontent-ng-c1280239522 src="img/firework.gif" class="game-container"></div><div _ngcontent-ng-c1280239522 class="instructions"> The fireworks lit up the beautiful sky as Emily and Alan watched in awe. <br _ngcontent-ng-c1280239522><br _ngcontent-ng-c1280239522>Hermann Park was filled with the sounds of oohs and aahs from the crowd. <br _ngcontent-ng-c1280239522></div><div _ngcontent-ng-c1280239522 class="instructions">
 Press enter to continue.
 </div><!----></app-secondyear-chaptertwelve-parta><!----></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script>
+<script src="main-3M7IQBGZ.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"12":"t31"},"c":{"12":[{"i":"t31","r":1}]}},{"c":{"0":[{"i":"c1280239522","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"12":"t43"},"c":{"12":[{"i":"t43","r":1}]}},{"c":{"0":[{"i":"c1280239522","r":1}]}}]}</script></body></html>`;

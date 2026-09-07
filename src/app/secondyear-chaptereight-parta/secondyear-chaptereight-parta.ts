@@ -19,14 +19,15 @@ interface MemoryCard {
 export class SecondYearChaptereightParta {
   constructor(private router: Router) {}
   icons = [
-    'img/sushi1.png',
-    'img/sushi2.png',
-    'img/sushi3.png',
-    'img/sushi4.png',
-    'img/sushi5.png',
-    'img/sushi6.png',
-    'img/sushi7.png',
-    'img/sushi8.png'
+    'img/member1.png',
+    'img/member2.png',
+    'img/member3.png',
+    'img/member4.png',
+    'img/member5.png',
+    'img/member6.png',
+    'img/member7.png',
+    'img/member8.png',
+    'img/member9.png',
   ];
 
   cards: MemoryCard[] = [];

@@ -18,6 +18,6 @@ export default `<!doctype html>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root></app-root>
-<script src="main-R5DMUXKJ.js" type="module"></script></body>
+<script src="main-3M7IQBGZ.js" type="module"></script></body>
 </html>
 `;

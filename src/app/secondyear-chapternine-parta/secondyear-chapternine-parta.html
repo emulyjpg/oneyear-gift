@@ -1,22 +1,29 @@
-<div class="instructions">Chapter 9: Happy Birthday, Alan!</div>
-<div class="win" *ngIf="winMessage">{{winMessage}}</div>
-<div class="pizza-container">
-  <img src="img/crocs.png" class="pizza-base" />
-
-  <div
-  class="topping"
-  *ngFor="let topping of toppings"
-  cdkDrag
-  #dragRef="cdkDrag"
-  (cdkDragStarted)="dragRef.data = topping"
-    >
-  <img [src]="topping.icon" [alt]="topping.name" />
+<div class="instructions">Chapter 9: E is For</div>
+<div class="instructions">List the 11 E's that came to Emily's birthday party.</div>
+<div class="win">{{winMessage}}</div>
+<div class="game-container">
+    <!-- <img class="game-container" src="img/museum.png" /> -->
+    <img [src]="'img/' + name + '-9.png'" alt="Plate" class="plate" *ngFor="let name of nameArray" />
+  
 </div>
 
 
-
-
+<div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="instructions">
+    <input type="string"
+        [(ngModel)]="nameInput"
+        [disabled]="winMessage === 'WIN!!'"
+        (input)="onPlateCountChange($event)"
+    /><br>
+</div>
+<!-- <div *ngIf="winMessage !== 'WIN!!' && winMessage !== 'Oh no! You fell!'" class="arrow-buttons">
+  <br>
+  <button aria-label="Left" (click)="move('left')" style="margin-right:8px;"><</button>
+  <button aria-label="Right" (click)="move('right')">></button>
+</div> -->
+<div *ngIf="winMessage =='Oh no! You fell!'" class="instructions">
+    Press enter to try again.
 </div>
 <div *ngIf="winMessage == 'WIN!!'" class="instructions">
   Press enter to continue.
 </div>
+<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

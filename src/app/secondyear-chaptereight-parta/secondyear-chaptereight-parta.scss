@@ -21,7 +21,7 @@
 .card {
   width: 60px;
   height: 80px;
-  background: #f0f0f0;
+  background: #d84e4e;
   
   
   display: flex;
@@ -59,7 +59,7 @@
   transform: rotateY(0deg);
 }
 .card-back {
-  background: #fff;
+  background: #d84e4e;
   color: #333;
   transform: rotateY(180deg);
 }
