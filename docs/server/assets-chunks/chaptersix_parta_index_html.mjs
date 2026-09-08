@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chaptersix-parta _nghost-ng-c2581621106 ngh="0"><div _ngcontent-ng-c2581621106 class="instructions">Chapter 6: A Christmas Surprise</div><div _ngcontent-ng-c2581621106 class="win">Loading...</div><div _ngcontent-ng-c2581621106 class="game-container"><!----></div><div _ngcontent-ng-c2581621106 class="instructions"><button _ngcontent-ng-c2581621106 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">Click to process the image!</button><!----><!----><!----></div></app-chaptersix-parta><!----></app-root>
-<script src="main-3M7IQBGZ.js" type="module"></script>
+<script src="main-42AOTFGD.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t2","7":"t3","8":"t4","9":"t5"},"c":{"5":[],"7":[{"i":"t3","r":1}],"8":[],"9":[]}},{"c":{"0":[{"i":"c2581621106","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t26","7":"t27","8":"t28","9":"t29"},"c":{"5":[],"7":[{"i":"t27","r":1}],"8":[],"9":[]}},{"c":{"0":[{"i":"c2581621106","r":1}]}}]}</script></body></html>`;

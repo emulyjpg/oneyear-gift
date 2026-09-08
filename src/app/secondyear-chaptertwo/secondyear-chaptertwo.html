@@ -12,9 +12,8 @@
     <button class="click-button" (click)="handleClick()" [disabled]="isWon">
       Click me!
     </button>
-
-    <button *ngIf="isWon" class="reset-button" (click)="resetGame()">
-      Play again
-    </button>
+    <div *ngIf="winMessage == 'WIN!!'" class="instructions">
+Press enter to continue.
+</div>
   </div>
 </div>

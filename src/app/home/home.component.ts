@@ -39,6 +39,16 @@ export class HomeComponent {
     { path: 'chapterfinal/parta', label: 'Final Chapter' }
   ];
 
+  get chaptersForActiveYear() {
+    if (this.activeYear !== 'second-year') {
+      return this.chapters;
+    }
+
+    return this.chapters.filter(
+      chapter => !['chaptersixteen/parta', 'chapterseventeen/parta'].includes(chapter.path)
+    );
+  }
+
   constructor(private router: Router) {}
 
   goTo(route: string) {

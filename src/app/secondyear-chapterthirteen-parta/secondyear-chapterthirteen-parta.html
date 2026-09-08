@@ -1,12 +1,12 @@
-<div class="instructions">Chapter 13: Family Dinner</div>
+<div class="instructions">Chapter 13: National Girlfriend Day</div>
 <div class="win">{{winMessage}}</div>
 <div class="game-container">
-    <img class="game-container" src="img/meetingalanfam.png" />
+    <img class="game-container" src="img/girlfriendday.png" />
 </div>
 
 <div class="instructions">
-<input type="string"
-       [ngModel]="answer"
+<input type="date"
+       [(ngModel)]="answer"
        [disabled]="winMessage === 'WIN!!'"
        (input)="onPlateCountChange($event)"
 /><br>

@@ -19,7 +19,7 @@ export class SecondYearChaptertwo {
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     if (event.key === 'Enter' && this.winMessage === 'WIN!!') {
-      this.router.navigate(['second-year/chapterfour']);
+      this.router.navigate(['second-year/chapterthree']);
     }
   }
 

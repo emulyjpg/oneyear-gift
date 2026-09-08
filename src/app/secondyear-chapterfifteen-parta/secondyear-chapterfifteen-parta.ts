@@ -1,59 +1,78 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { CdkDragDrop } from '@angular/cdk/drag-drop';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-secondyear-chapterfifteen-parta',
-  imports: [MatIconModule, CommonModule, FormsModule],
+  imports: [MatIconModule, CommonModule, FormsModule, DragDropModule],
   templateUrl: './secondyear-chapterfifteen-parta.html',
   styleUrl: './secondyear-chapterfifteen-parta.scss'
 })
 export class SecondYearChapterfifteenParta {
 constructor(private router: Router) {}
-  pos = { x: 180, y: 400 };
-  readonly step = 20;
-  readonly boxSize = 400;
-  readonly charSize = 40;
-  rockCount = 0;
-  score = 0;
-  winMessage = "What song was Emily most excited for?";
-  readonly leftLeftPos = 0;
-  readonly leftMiddlePos = 140;
-  readonly rightMiddlePos = 260;
-  readonly rightRightPos = 310;
-characterImage = 'img/8bitfriendOG.png';
-emilyImage = 'img/emilycheer.png';
+ @ViewChild('dropZoneRef') dropZoneRef!: ElementRef;
+toppings = [
+    { name: 'Pepperoni', icon: 'img/pizza1.png' },
+    { name: 'Pepperoni', icon: 'img/pizza2.png' },
+    { name: 'Pepperoni', icon: 'img/pizza3.png' },
+    { name: 'Mushroom', icon: 'img/pizza4.png' },
+    { name: 'Mushroom', icon: 'img/pizza5.png' },
+    { name: 'Mushroom', icon: 'img/pizza6.png' },
+    { name: 'Onion', icon: 'img/pizza7.png' },
+    { name: 'Onion', icon: 'img/pizza8.png' },
+    { name: 'Onion', icon: 'img/pizza9.png' },
+  ];
+  winMessage = "Add toppings to the pizza!";
+  initialY = 0;
+  initialX = 0;
+  droppedY = 0;
+  droppedX = 0;
+  charmCount = 0;
 
-  answer = null; // Default value
-  
+  droppedToppings: any[] = [];
+
+ 
+
+onDrop(event: CdkDragDrop<any>) {
+  const topping = event.item.data;
+  const mouseEvent = event.event as MouseEvent;
+
+  const dropZoneRect = this.dropZoneRef.nativeElement.getBoundingClientRect();
+  const relativeX = mouseEvent.clientX - dropZoneRect.left;
+  const relativeY = mouseEvent.clientY - dropZoneRect.top;
+
+  this.droppedToppings.push({
+    ...topping,
+    x: relativeX,
+    y: relativeY
+  });
+
+
+}
+
+
+
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
-      this.router.navigate(['second-year/chaptersixteen/parta']);
+      this.router.navigate(['second-year/chapterfinal/parta']);
     }
-    // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
-    //     this.move('left');
-    // }
-    // else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
-    //     this.move('right');
-    //}
-    // Add custom logic here based on the pressed key
-    // For example, trigger a function or update a property
   }
-
-  onPlateCountChange(event: any) {
-  const value = event.target.value;
-  if (value.toLowerCase() == "brought the heat back") {
-      this.winMessage = "WIN!!";
+  @HostListener('document:mouseup', ['$event'])
+  onMouseUp(event: MouseEvent) {
+    if(this.charmCount < 9) {
+      this.charmCount++;
     }
-    else
+    console.log(this.charmCount);
+    if(this.charmCount >= 9)
     {
-      //the date we first met
-      this.winMessage = "Not quite right, try again!";
-    }
+      this.winMessage = "WIN!!"
+    }  
   }
 }

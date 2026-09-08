@@ -8,7 +8,7 @@
 
 <div *ngIf="showChapters" class="home-menu">
   <p>Select a chapter from {{ selectedYearLabel }}:</p>
-  <button class="home-menu" *ngFor="let chapter of chapters" (click)="goTo(chapter.path)">
+  <button class="home-menu" *ngFor="let chapter of chaptersForActiveYear" (click)="goTo(chapter.path)">
     {{ chapter.label }}
   </button>
   <button class="back-button" (click)="hideChapterSelect()">Back</button>

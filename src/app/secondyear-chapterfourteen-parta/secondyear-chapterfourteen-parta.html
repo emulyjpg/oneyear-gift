@@ -1,20 +1,19 @@
-<div class="instructions">Chapter 14: National Girlfriend Day</div>
-<div class="win">{{winMessage}}</div>
-<div class="game-container">
-    <img class="game-container" src="img/nationalgfday.png" />
+<div class="instructions">Chapter 14: Feed Biscuit Treats</div>
+
+<div class="game-bg">
+  <div class="game-card">
+    <div class="counter">Clicks: {{ count }} / {{ targetClicks }}</div>
+    <div class="win-message">{{ winMessage }}</div>
+    <img
+      [src]="count % 2 === 0 ? 'img/biscuit-1.png' : 'img/biscuit-2.png'"
+      style="width:100px"
+      alt="miso"
+    />
+    <button class="click-button" (click)="handleClick()" [disabled]="isWon">
+      Click me!
+    </button>
+    <div *ngIf="winMessage == 'WIN!!'" class="instructions">
+Press enter to continue.
 </div>
-
-<div class="instructions">
-<input type="date"
-       [(ngModel)]="answer"
-       [disabled]="winMessage === 'WIN!!'"
-       (input)="onPlateCountChange($event)"
-/><br>
-<div *ngIf="winMessage == 'WIN!!'" class="instructions">
-  Press enter to continue.
+  </div>
 </div>
-</div>
-
-
-
-<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

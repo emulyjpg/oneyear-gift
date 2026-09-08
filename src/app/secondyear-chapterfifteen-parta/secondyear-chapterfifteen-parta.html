@@ -1,20 +1,22 @@
-<div class="instructions">Chapter 15: Enhypen Concert</div>
-<div class="win">{{winMessage}}</div>
-<div class="game-container">
-    <img class="game-container" src="img/enhypen.png" />
+<div class="instructions">Chapter 15: Pizza Date</div>
+<div class="win" *ngIf="winMessage">{{winMessage}}</div>
+<div class="pizza-container">
+  <img src="img/pizza.png" class="pizza-base" />
+
+  <div
+  class="topping"
+  *ngFor="let topping of toppings"
+  cdkDrag
+  #dragRef="cdkDrag"
+  (cdkDragStarted)="dragRef.data = topping"
+    >
+  <img [src]="topping.icon" [alt]="topping.name" />
 </div>
 
-<div class="instructions">
-<input type="string"
-       [ngModel]="answer"
-       [disabled]="winMessage === 'WIN!!'"
-       (input)="onPlateCountChange($event)"
-/><br>
+
+
+
+</div>
 <div *ngIf="winMessage == 'WIN!!'" class="instructions">
   Press enter to continue.
 </div>
-</div>
-
-
-
-<!-- <div *ngIf="winMessage == 'WIN!!'" class="instructions"><button (click)="goTo('chaptertwo')">Next Chapter...</button></div> -->

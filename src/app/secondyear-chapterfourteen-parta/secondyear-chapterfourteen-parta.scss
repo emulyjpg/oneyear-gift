@@ -1,73 +1,66 @@
-.game-container {
-  position: relative;
-  width: 400px;
-//   height: 500px;
-  border: 2px solid #ccc;
-  margin: 0px auto 0px auto;
-  background: #C0C0C0;
-  .rocks {
-    img {
-        height: 40px;
-    }
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centers each rock horizontally */;
-  margin-bottom: 20px;
-}
-
-.rock-row {
-  height: 10px;
-  text-align: center;
-  margin: 10px 0;
-  &.left-left {
-    margin-left: 10px;
-    align-self: flex-start;
-  }
-  &.left-middle {
-    margin-left: 100px;
-    align-self: flex-start;
-  }
-   &.right-middle {
-    margin-right: 100px;
-    align-self: flex-end;
-  }
-  &.right-right {
-    margin-right: 10px;
-    align-self: flex-end;
-  }
-}
-
-    
-}
-.character {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-    }
 .instructions {
   text-align: center;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.win {
-  text-align: center;
-  margin-bottom: 8px;
-  color: red;
+
+.game-bg {
+  background: #e5e5ea;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
 }
-.arrow-buttons {
+
+.game-card {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
   text-align: center;
-  button {
-    width: 100px;
-    height: 50px;
-  }
-  
+  max-width: 420px;
+  width: 100%;
 }
-.plate {
-    height: 40px;
-    align-content: baseline;
-  }
+
+.counter {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.win-message {
+  font-size: 1.2rem;
+  font-weight: 700;
+  min-height: 28px;
+}
+
+.click-button,
+.reset-button {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.click-button {
+  background: #007aff;
+  color: #fff;
+}
+
+.click-button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.reset-button {
+  background: #f1f0f0;
+  color: #222;
+}
+
 
 

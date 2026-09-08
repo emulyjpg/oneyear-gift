@@ -11,14 +11,14 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './secondyear-chapterthirteen-parta.scss'
 })
 export class SecondYearChapterthirteenParta {
-constructor(private router: Router) {}
+ constructor(private router: Router) {}
   pos = { x: 180, y: 400 };
   readonly step = 20;
   readonly boxSize = 400;
   readonly charSize = 40;
   rockCount = 0;
   score = 0;
-  winMessage = "What were we drinking here?";
+  winMessage = "When was national girlfriend day this year?";
   readonly leftLeftPos = 0;
   readonly leftMiddlePos = 140;
   readonly rightMiddlePos = 260;
@@ -32,6 +32,7 @@ emilyImage = 'img/emilycheer.png';
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
     console.log('Key pressed:', event.key);
+    console.log(this.answer);
     if(event.key == "Enter" && this.winMessage == "WIN!!") {
       this.router.navigate(['second-year/chapterfourteen/parta']);
     }
@@ -47,7 +48,7 @@ emilyImage = 'img/emilycheer.png';
 
   onPlateCountChange(event: any) {
   const value = event.target.value;
-  if (value.toLowerCase() == "nuoc mia") {
+  if (value == "2026-08-01") {
       this.winMessage = "WIN!!";
     }
     else

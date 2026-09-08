@@ -10,44 +10,16 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './secondyear-chaptereleven-parta.scss'
 })
 export class SecondYearChapterelevenParta {
-  constructor(private router: Router) {}
+constructor(private router: Router) {}
   pos = { x: 180, y: 400 };
   readonly step = 20;
   readonly boxSize = 400;
   readonly charSize = 40;
-  rockCount = 0;
+  loadCount = 0;
   score = 0;
-  winMessage = "";
-  readonly leftLeftPos = 0;
-  readonly leftMiddlePos = 140;
-  readonly rightMiddlePos = 260;
-  readonly rightRightPos = 310;
-characterImage = 'img/8bitfriendOG.png';
-emilyImage = 'img/emilycheer.png';
+  winMessage = "Loading...";
 
-  nameInput = ""; // Default value
-  nameArray: string[] = [];
-  answerArray: string[] = [
-    "christian"
-    ,"kasey"
-    ,"emily"
-    ,"alan"
-    ,"rachel"
-    ,"melissa"
-    ,"hoa"
-    ,"janie"
-    ,"kim"
-    ,"teddy"
-    ,"thien" //won't accept charlie lol
-    ,"roan"
-    ,"aaron"
-    ,"taliz"
-    ,"mohammad"
-    ,"syed"
-    ,"jacob"
-    ,"fariha"
-    ,"alice"
-    ,"brandon"];
+  plateCount: number = 0; // Default value
   
 
   @HostListener('document:keydown', ['$event'])
@@ -66,19 +38,28 @@ emilyImage = 'img/emilycheer.png';
     // For example, trigger a function or update a property
   }
 
-  onPlateCountChange(event: any) {
-    const value = event.target.value;
-    console.log(value);
-    if(this.answerArray.includes(value.toLowerCase()) && !this.nameArray.includes(value))
+
+
+  loading()
+  {
+    this.loadCount++;
+    console.log(this.loadCount);
+    if(this.loadCount >= 8)
     {
-      //the date we first met
-      this.nameArray.push(value.toLowerCase());
-      this.nameInput = ''; //clear input field
-      //this.winMessage = "WIN!!";
-    }
-    if(this.nameArray.length == 20) //complete
-    {
+      console.log("WIN!!");
       this.winMessage = "WIN!!";
+    }
+    else if(this.loadCount >= 6)
+    {
+      this.winMessage = "Almost!!";
+    }
+    else if(this.loadCount >= 4)
+    {
+      this.winMessage = "Still loading..";
+    }
+    else if(this.loadCount >= 2)
+    {
+      this.winMessage = "Loading..";
     }
   }
 

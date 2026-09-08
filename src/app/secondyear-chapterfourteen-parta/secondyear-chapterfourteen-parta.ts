@@ -12,49 +12,37 @@ import { FormsModule } from '@angular/forms';
 })
 export class SecondYearChapterfourteenParta {
 constructor(private router: Router) {}
-  pos = { x: 180, y: 400 };
-  readonly step = 20;
-  readonly boxSize = 400;
-  readonly charSize = 40;
-  rockCount = 0;
-  score = 0;
-  winMessage = "When was national girlfriend day this year?";
-  readonly leftLeftPos = 0;
-  readonly leftMiddlePos = 140;
-  readonly rightMiddlePos = 260;
-  readonly rightRightPos = 310;
-characterImage = 'img/8bitfriendOG.png';
-emilyImage = 'img/emilycheer.png';
 
-  answer = null; // Default value
-  
+  readonly targetClicks = 10;
+  count = 0;
+  winMessage = 'Keep feeding!';
+  isWon = false;
 
   @HostListener('document:keydown', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent) {
-    console.log('Key pressed:', event.key);
-    console.log(this.answer);
-    if(event.key == "Enter" && this.winMessage == "WIN!!") {
+    if (event.key === 'Enter' && this.winMessage === 'WIN!!') {
       this.router.navigate(['second-year/chapterfifteen/parta']);
     }
-    // else if((event.key == "ArrowLeft" || event.key == "a") && this.winMessage !== "WIN!!") {
-    //     this.move('left');
-    // }
-    // else if((event.key == "ArrowRight" || event.key == "d") && this.winMessage !== "WIN!!") {
-    //     this.move('right');
-    //}
-    // Add custom logic here based on the pressed key
-    // For example, trigger a function or update a property
   }
 
-  onPlateCountChange(event: any) {
-  const value = event.target.value;
-  if (value == "2025-08-01") {
-      this.winMessage = "WIN!!";
+  handleClick() {
+    if (this.isWon) {
+      return;
     }
-    else
-    {
-      //the date we first met
-      this.winMessage = "Not quite right, try again!";
+
+    this.count++;
+
+    if (this.count >= this.targetClicks) {
+      this.isWon = true;
+      this.winMessage = 'WIN!!';
+    } else {
+      this.winMessage = `Keep feeding!`;
     }
+  }
+
+  resetGame() {
+    this.count = 0;
+    this.winMessage = 'Keep feeding!';
+    this.isWon = false;
   }
 }

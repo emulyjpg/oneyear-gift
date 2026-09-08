@@ -40,8 +40,6 @@ import { SecondYearChaptertwelveParta } from './secondyear-chaptertwelve-parta/s
 import { SecondYearChapterthirteenParta } from './secondyear-chapterthirteen-parta/secondyear-chapterthirteen-parta';
 import { SecondYearChapterfourteenParta } from './secondyear-chapterfourteen-parta/secondyear-chapterfourteen-parta';
 import { SecondYearChapterfifteenParta } from './secondyear-chapterfifteen-parta/secondyear-chapterfifteen-parta';
-import { SecondYearChaptersixteenParta } from './secondyear-chaptersixteen-parta/secondyear-chaptersixteen-parta';
-import { SecondYearChapterseventeenParta } from './secondyear-chapterseventeen-parta/secondyear-chapterseventeen-parta';
 import { SecondYearChapterfinalParta } from './secondyear-chapterfinal-parta/secondyear-chapterfinal-parta';
 
 export const routes: Routes = [
@@ -108,7 +106,5 @@ export const routes: Routes = [
   ,{ path: 'second-year/chapterthirteen/parta', component: SecondYearChapterthirteenParta }
   ,{ path: 'second-year/chapterfourteen/parta', component: SecondYearChapterfourteenParta }
   ,{ path: 'second-year/chapterfifteen/parta', component: SecondYearChapterfifteenParta }
-  ,{ path: 'second-year/chaptersixteen/parta', component: SecondYearChaptersixteenParta }
-  ,{ path: 'second-year/chapterseventeen/parta', component: SecondYearChapterseventeenParta }
   ,{ path: 'second-year/chapterfinal/parta', component: SecondYearChapterfinalParta }
 ];
