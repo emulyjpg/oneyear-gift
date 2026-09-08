@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -16,7 +16,7 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
 </script><script>window.__jsaction_bootstrap(document.body,"ng",["click"],[]);</script>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
-  <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-home _nghost-ng-c1898343989 ngh="0"><div _ngcontent-ng-c1898343989 class="instructions">Our 1st Year</div><div _ngcontent-ng-c1898343989 class="home-menu"><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Start</button><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Our 1st Year</button><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Our 2nd Year</button></div><!----><!----></app-home><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+  <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-home _nghost-ng-c1898343989 ngh="0"><div _ngcontent-ng-c1898343989 class="instructions">Our Years Together</div><div _ngcontent-ng-c1898343989 class="home-menu"><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Start</button><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Our 1st Year</button><button _ngcontent-ng-c1898343989 class="home-menu" jsaction="click:;">Our 2nd Year</button></div><!----><!----></app-home><!----></app-root>
+<script src="main-JYV2IACN.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{"t":{"2":"t0","3":"t1"},"c":{"2":[{"i":"t0","r":1}],"3":[]}},{"c":{"0":[{"i":"c1898343989","r":1}]}}]}</script></body></html>`;

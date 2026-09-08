@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chapterten-parta _nghost-ng-c2563126818 ngh="0"><div _ngcontent-ng-c2563126818 class="instructions">Chapter 10: Machi Sushi</div><div _ngcontent-ng-c2563126818 class="win">Add to the table!</div><!----><div _ngcontent-ng-c2563126818 class="pizza-container"><img _ngcontent-ng-c2563126818 src="img/plates.png" class="pizza-base"><div _ngcontent-ng-c2563126818 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2563126818 src="img/machi1.png" alt="Tuna Tataki"></div><!----><div _ngcontent-ng-c2563126818 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2563126818 src="img/machi2.png" alt="Mango Salmon"></div><!----><div _ngcontent-ng-c2563126818 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2563126818 src="img/machi3.png" alt="Beef Teriyaki"></div><!----><div _ngcontent-ng-c2563126818 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2563126818 src="img/machi4.png" alt="Seared Salmon"></div><!----><div _ngcontent-ng-c2563126818 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2563126818 src="img/machi5.png" alt="Seared Beef"></div><!----><!----></div><!----></app-secondyear-chapterten-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"2":"t39","5":"t40","6":"t41"},"c":{"2":[{"i":"t39","r":1}],"5":[{"i":"t40","r":2,"c":{"0":[]},"x":5}],"6":[]}},{"c":{"0":[{"i":"c2563126818","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"2":"t43","5":"t44","6":"t45"},"c":{"2":[{"i":"t43","r":1}],"5":[{"i":"t44","r":2,"c":{"0":[]},"x":5}],"6":[]}},{"c":{"0":[{"i":"c2563126818","r":1}]}}]}</script></body></html>`;

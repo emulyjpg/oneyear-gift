@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterone-partb _nghost-ng-c1382378509 ngh="0"><div _ngcontent-ng-c1382378509 class="instructions">Chapter 1: The Day That I Met You</div><div _ngcontent-ng-c1382378509 class="win">Guess how many plates we can eat together!</div><div _ngcontent-ng-c1382378509 class="game-container"><img _ngcontent-ng-c1382378509 src="img/hotpot.gif" class="game-container"></div><div _ngcontent-ng-c1382378509 class="instructions"> "How many plates can we eat?" Emily asks. <br _ngcontent-ng-c1382378509>Alan smiles, "Let's see how many we can eat together!" <br _ngcontent-ng-c1382378509><br _ngcontent-ng-c1382378509>Input in a number:
 </div><!----><div _ngcontent-ng-c1382378509 class="instructions"><input _ngcontent-ng-c1382378509 type="number" min="0" max="999" value="0" class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c1382378509><!----><!----></div></app-chapterone-partb><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t32","10":"t33","11":"t34"},"c":{"6":[{"i":"t32","r":1}],"10":[],"11":[]}},{"c":{"0":[{"i":"c1382378509","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t40","10":"t41","11":"t42"},"c":{"6":[{"i":"t40","r":1}],"10":[],"11":[]}},{"c":{"0":[{"i":"c1382378509","r":1}]}}]}</script></body></html>`;

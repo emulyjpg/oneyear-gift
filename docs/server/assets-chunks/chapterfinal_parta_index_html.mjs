@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterfinal-parta _nghost-ng-c551670291 ngh="0"><div _ngcontent-ng-c551670291 class="instructions">Final Chapter</div><div _ngcontent-ng-c551670291 class="game-container"><img _ngcontent-ng-c551670291 src="img/finale.png" class="game-container"></div><div _ngcontent-ng-c551670291 class="instructions"> Dear Alan, <br _ngcontent-ng-c551670291> I'm so grateful this past year. I hope that you enjoyed this storyline game app as much as I enjoyed recreating these memories using Angular! To be honest, it really helped me appreciate all of the memories we made together. It also challenged my coding skills LOL. Even though it is a simple game, I hope you can see all the love I put into making this for you. You are my favorite person in the world and I can't wait to make more memories with you. I love you so much. <br _ngcontent-ng-c551670291>Happy 1st Anniversary! <br _ngcontent-ng-c551670291><br _ngcontent-ng-c551670291> Love, <br _ngcontent-ng-c551670291> Emily
 </div><!----><div _ngcontent-ng-c551670291 class="win"> And they lived happilly ever after... <br _ngcontent-ng-c551670291> The End.
 </div></app-chapterfinal-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"4":"t27"},"c":{"4":[{"i":"t27","r":1}]}},{"c":{"0":[{"i":"c551670291","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"4":"t30"},"c":{"4":[{"i":"t30","r":1}]}},{"c":{"0":[{"i":"c551670291","r":1}]}}]}</script></body></html>`;

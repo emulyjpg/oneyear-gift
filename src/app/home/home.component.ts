@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class HomeComponent {
   showChapters = false;
   activeYear = 'first-year';
-  selectedYearLabel = 'Our 1st Year';
+  selectedYearLabel = 'Our Years Together';
   chapters = [
     { path: 'chapterone', label: 'Chapter 1' },
     // { path: 'chapterone/partb', label: 'Chapter One Part B' },

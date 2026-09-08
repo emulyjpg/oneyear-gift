@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chapterseven-parta _nghost-ng-c647598417 ngh="0"><div _ngcontent-ng-c647598417 class="instructions">Chapter 7: Happy Birthday, Alan!</div><div _ngcontent-ng-c647598417 class="instructions">List all 19 people that came to Sushi Masa.</div><div _ngcontent-ng-c647598417 class="win"><!--ngetn--></div><div _ngcontent-ng-c647598417 class="game-container"><!----></div><div _ngcontent-ng-c647598417 class="instructions"><input _ngcontent-ng-c647598417 type="string" value class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c647598417></div><!----><!----><!----></app-secondyear-chapterseven-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"7":"t17","8":"t18","9":"t19","10":"t20"},"c":{"7":[],"8":[{"i":"t18","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c647598417","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"7":"t16","8":"t17","9":"t18","10":"t19"},"c":{"7":[],"8":[{"i":"t17","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c647598417","r":1}]}}]}</script></body></html>`;

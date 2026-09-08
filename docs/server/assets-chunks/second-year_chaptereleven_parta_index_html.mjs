@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptereleven-parta _nghost-ng-c3252907202 ngh="0"><div _ngcontent-ng-c3252907202 class="instructions">Chapter 11: A Litle Souvenir</div><div _ngcontent-ng-c3252907202 class="win">Loading...</div><div _ngcontent-ng-c3252907202 class="game-container"><!----></div><div _ngcontent-ng-c3252907202 class="instructions"><button _ngcontent-ng-c3252907202 aria-label="Left" style="margin-right: 8px;" jsaction="click:;">Click to process the image!</button><!----><!----></div></app-secondyear-chaptereleven-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t22","7":"t23","8":"t24"},"c":{"5":[],"7":[{"i":"t23","r":1}],"8":[]}},{"c":{"0":[{"i":"c3252907202","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"5":"t8","7":"t9","8":"t10"},"c":{"5":[],"7":[{"i":"t9","r":1}],"8":[]}},{"c":{"0":[{"i":"c3252907202","r":1}]}}]}</script></body></html>`;

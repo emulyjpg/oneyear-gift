@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterthree-partc _nghost-ng-c180868666 ngh="0"><div _ngcontent-ng-c180868666 class="instructions">Chapter 3: Day 1</div><div _ngcontent-ng-c180868666 class="win">"Will you be my girlfriend?"</div><div _ngcontent-ng-c180868666 class="game-container"><img _ngcontent-ng-c180868666 src="img/day1gif.gif" class="game-container"></div><div _ngcontent-ng-c180868666 class="instructions"> "Will you be my girlfriend?" Alan asks. <br _ngcontent-ng-c180868666>How does Emily respond?
 </div><!----><div _ngcontent-ng-c180868666 class="instructions"><input _ngcontent-ng-c180868666 type="text" value class="ng-untouched ng-pristine ng-valid" jsaction="input:;blur:;compositionstart:;compositionend:;"><br _ngcontent-ng-c180868666><!----></div></app-chapterthree-partc><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t13","10":"t14"},"c":{"6":[{"i":"t13","r":1}],"10":[]}},{"c":{"0":[{"i":"c180868666","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"6":"t9","10":"t10"},"c":{"6":[{"i":"t9","r":1}],"10":[]}},{"c":{"0":[{"i":"c180868666","r":1}]}}]}</script></body></html>`;

@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -18,6 +18,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-chapterten-parta _nghost-ng-c3511571019 ngh="0"><div _ngcontent-ng-c3511571019 class="instructions">Chapter 10: Museum of Fine Arts</div><div _ngcontent-ng-c3511571019 class="win">How beautiful!</div><div _ngcontent-ng-c3511571019 class="game-container"><img _ngcontent-ng-c3511571019 src="img/museum.png" class="game-container"><div _ngcontent-ng-c3511571019 class="character" style="left: 50px; top: 240px;"><img _ngcontent-ng-c3511571019 alt="Character" style="width: 150px;" src="img/museumcouple.png"></div></div><div _ngcontent-ng-c3511571019 class="instructions"> Use only left or right arrow keys to move the characters.
 </div><!----><!----><!----></app-chapterten-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"8":"t34","9":"t35","10":"t36"},"c":{"8":[{"i":"t34","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c3511571019","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"8":"t38","9":"t39","10":"t40"},"c":{"8":[{"i":"t38","r":1}],"9":[],"10":[]}},{"c":{"0":[{"i":"c3511571019","r":1}]}}]}</script></body></html>`;

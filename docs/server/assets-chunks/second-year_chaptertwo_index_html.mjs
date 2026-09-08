@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chaptertwo _nghost-ng-c296752777 ngh="0"><div _ngcontent-ng-c296752777 class="instructions">Chapter 2: Feed Miso Churu</div><div _ngcontent-ng-c296752777 class="game-bg"><div _ngcontent-ng-c296752777 class="game-card"><div _ngcontent-ng-c296752777 class="counter">Clicks: 0 / 10</div><div _ngcontent-ng-c296752777 class="win-message">Keep feeding!</div><img _ngcontent-ng-c296752777 alt="miso" style="width: 100px;" src="img/miso-1.png"><button _ngcontent-ng-c296752777 class="click-button" jsaction="click:;"> Click me! </button><!----></div></div></app-secondyear-chaptertwo><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"11":"t35"},"c":{"11":[]}},{"c":{"0":[{"i":"c296752777","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"11":"t25"},"c":{"11":[]}},{"c":{"0":[{"i":"c296752777","r":1}]}}]}</script></body></html>`;

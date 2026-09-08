@@ -1,7 +1,7 @@
 export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
-  <title>Our 1st Year</title>
+  <title>Our Years Together</title>
   <base href="/oneyear-gift/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
@@ -17,6 +17,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <button><a href="/" onclick="this.href=location.hostname.endsWith('.github.io') ? '/oneyear-gift/' : '/'">Back to Home</a></button>
   <app-home-button></app-home-button>
   <app-root ng-version="20.1.1" _nghost-ng-c120001424 ngh="1" ng-server-context="ssg"><router-outlet _ngcontent-ng-c120001424></router-outlet><app-secondyear-chapterfifteen-parta _nghost-ng-c2485828837 ngh="0"><div _ngcontent-ng-c2485828837 class="instructions">Chapter 15: Pizza Date</div><div _ngcontent-ng-c2485828837 class="win">Add toppings to the pizza!</div><!----><div _ngcontent-ng-c2485828837 class="pizza-container"><img _ngcontent-ng-c2485828837 src="img/pizza.png" class="pizza-base"><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza1.png" alt="Pepperoni"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza2.png" alt="Pepperoni"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza3.png" alt="Pepperoni"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza4.png" alt="Mushroom"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza5.png" alt="Mushroom"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza6.png" alt="Mushroom"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza7.png" alt="Onion"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza8.png" alt="Onion"></div><!----><div _ngcontent-ng-c2485828837 cdkdrag class="cdk-drag topping"><img _ngcontent-ng-c2485828837 src="img/pizza9.png" alt="Onion"></div><!----><!----></div><!----></app-secondyear-chapterfifteen-parta><!----></app-root>
-<script src="main-42AOTFGD.js" type="module"></script>
+<script src="main-JYV2IACN.js" type="module"></script>
 
-<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"2":"t21","5":"t22","6":"t23"},"c":{"2":[{"i":"t21","r":1}],"5":[{"i":"t22","r":2,"c":{"0":[]},"x":9}],"6":[]}},{"c":{"0":[{"i":"c2485828837","r":1}]}}]}</script></body></html>`;
+<script id="ng-state" type="application/json">{"__nghData__":[{"t":{"2":"t20","5":"t21","6":"t22"},"c":{"2":[{"i":"t20","r":1}],"5":[{"i":"t21","r":2,"c":{"0":[]},"x":9}],"6":[]}},{"c":{"0":[{"i":"c2485828837","r":1}]}}]}</script></body></html>`;
